@@ -1,1 +1,1 @@
-# Group-3-Stock-Price-Project-1
+# Group-3-Cryto-Price-Project-1
