@@ -12,12 +12,23 @@
 .hero-body{
   background: linear-gradient(to left, rgb(217, 16, 16),rgb(217, 81, 17), rgb(220, 174, 11));
 }
-.button{
+ .button{
 
     border-radius: 0.7em;
     cursor: pointer;
     background: white;
 }
-.button:hover{
+ .button:hover{
 background:rgba(205, 203, 203, 0.5);
+}
+.has-image-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+.title{
+  font-size: 60px;
+}
+.message{
+margin-left: 400;
+margin-right: 400;
 }

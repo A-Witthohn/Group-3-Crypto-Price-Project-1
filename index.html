@@ -26,7 +26,7 @@
 
 
     <main>
-        <div class="dropdown is-active">
+        <div class="dropdown">
             <div class="dropdown-trigger">
               <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                 <span>Dropdown button</span>
@@ -65,7 +65,7 @@
                     <div class="column">
                       <h1 class="is-size-1 title">First Column Title</h1>
                       <div class="card">
-                        <figure class="image is-64x64 has-text-centered">
+                        <figure class="image is-64x64 has-image-centered">
                             <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
                           </figure>
                         <div class="card-content">
@@ -79,7 +79,7 @@
                     <div class="column">
                       <h1 class="is-size-1 title">Second Column Title</h1>
                       <div class="card">
-                        <figure class="image is-64x64">
+                        <figure class="image is-64x64 has-image-centered">
                             <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
                           </figure>
                         <div class="card-content">
@@ -92,12 +92,22 @@
             </div>
             </div>
             </section>
-            <div class="modal-message">
-                <p>Modal info goes here</p>
+            <article class="message is-info">
+                <div class="message-header">
+                    <div class="has-text-centered">
+                  <p>Hello World</p>
+                  </div>
+                  </div>
+                  <div class="has-text-centered">
+                  <div class="message-body">
+                   Click button to get modal
+                   </div>
                 <div class="has-text-centered">
             <button class="button">Modal Button</button>
             </div>
+            </div>
 </div>
+</article>
 <!--modal-->
 <div class="modal">
     <div class="modal-background">
