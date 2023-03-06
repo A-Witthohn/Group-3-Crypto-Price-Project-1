@@ -5,7 +5,19 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .card {
-  background: rgba(205, 203, 203, 0.5)!important;
+  background: rgba(228, 164, 96, 0.5)!important;
   border-radius: 0.70rem;
   box-shadow: 10px 5px 5px rgb(15, 15, 15);
+}
+.hero-body{
+  background: linear-gradient(to left, rgb(217, 16, 16),rgb(217, 81, 17), rgb(220, 174, 11));
+}
+.button{
+
+    border-radius: 0.7em;
+    cursor: pointer;
+    background: white;
+}
+.button:hover{
+background:rgba(205, 203, 203, 0.5);
 }
