@@ -4,37 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 5 Cryto Today !!!! </title>
-    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <title>Top 5 Crypto Today !!!! </title>
+    
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
 <header>
-    <h1>This Is Cryto Title</h1>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+    <h1 class="title has-text-centered">This Is Crypto Title</h1>
+    <h2 class="subtitle has-text-centered">Crypto Subtitle</h2>
+
+    </div>
+    </div>
+    </section>
 </header>
 
 
     <main>
+        <div class="dropdown is-active">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>Dropdown button</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item">
+                  Dropdown item
+                </a>
+                <a class="dropdown-item">
+                  Other dropdown item
+                </a>
+                <a href="#" class="dropdown-item is-active">
+                  Active dropdown item
+                </a>
+                <a href="#" class="dropdown-item">
+                  Other dropdown item
+                </a>
+                <hr class="dropdown-divider">
+                <a href="#" class="dropdown-item">
+                  With a divider
+                </a>
+              </div>
+            </div>
+          </div>
 
-    <section>
-        <form>
-            <p>This is where our drop down will go</p>
-        </form>
-    </section>
 
-        <section id="coinData">
-            <h2>This is box one title</h2>
-        </section>
 
-        <section id="coinURL">
-            <h3> This is box two title </h3>
-        </section>
-
+        <section class="section">
+            <div class="container has-text-centered">
+                <div class="columns">
+                    <div class="column">
+                      <h1 class="is-size-1 title">First Column Title</h1>
+                      <div class="card">
+                        <figure class="image is-64x64 has-text-centered">
+                            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                          </figure>
+                        <div class="card-content">
+                          <div class="content">
+                            
+                            Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h1 class="is-size-1 title">Second Column Title</h1>
+                      <div class="card">
+                        <figure class="image is-64x64">
+                            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                          </figure>
+                        <div class="card-content">
+                          <div class="content">
+                            Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            </div>
+            </section>
+            <div class="modal-message">
+                <p>Modal info goes here</p>
+                <div class="has-text-centered">
+            <button class="button">Modal Button</button>
+            </div>
+</div>
+<!--modal-->
+<div class="modal">
+    <div class="modal-background">
+        <div class="modal-content has-background-white py-5 px-5">
+            <h3 class="title mb-6">Title for the modal</h3>
+        </div>
+    </div>
+</div>
 
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p><strong>Created by Emily Miles, Aaron Witthohn, Spencer Hill...</strong></p>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="./assets/JS/script.js"></script>
-
+    <script src="javascript.js"></script>
 </body>
 </html>

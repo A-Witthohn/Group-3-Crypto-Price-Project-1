@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card {
+  background: rgba(205, 203, 203, 0.5)!important;
+  border-radius: 0.70rem;
+  box-shadow: 10px 5px 5px rgb(15, 15, 15);
+}
