@@ -29,7 +29,7 @@ WireFrame - Page 1
 </p></strong>
 
 <p align="center">
-    <img src="./assets/wireFrame-p1.PNG" alt="WireFrame-page1">
+    <img src="./assets/wireframe-p1.PNG" alt="WireFrame-page1">
 </p>
 
 <strong><p align="center">
