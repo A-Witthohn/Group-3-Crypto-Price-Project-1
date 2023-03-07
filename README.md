@@ -69,6 +69,7 @@ Mockup-Web
 <p align="center">
     <img src="./assets/mockup-web.png" alt="mockup-web">
 </p>
+
 ---
 
 ## Deployment 
