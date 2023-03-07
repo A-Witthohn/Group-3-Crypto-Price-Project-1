@@ -14,22 +14,26 @@ var chosenCoin;
 
 btcEl.addEventListener("click", function(){
     chosenCoin = "bitcoin";
-    cryptoLookup(chosenCoin);
+    // cryptoLookup(chosenCoin);
+    cryptoUrl(chosenCoin);
 })
 ethEl.addEventListener("click", function (){
     chosenCoin = "ethereum";
-    cryptoLookup(chosenCoin);
+    // cryptoLookup(chosenCoin);
+    cryptoUrl(chosenCoin);
 })
 ltcEl.addEventListener("click", function (){
     chosenCoin = "litecoin";
-    cryptoLookup(chosenCoin);
+    // cryptoLookup(chosenCoin);
+    cryptoUrl(chosenCoin);
 })
 xrpEl.addEventListener("click", function (){
-    chosenCoin = "xrp";
-    cryptoLookup(chosenCoin);
+    chosenCoin = "ripple";
+    // cryptoLookup(chosenCoin);
+    cryptoUrl(chosenCoin);
 } )
 
-var cryptoLookup = function (crypto) {
+var cryptoUrl = function (crypto) {
     console.log("chosen coin is " + crypto)
 
     var requestUrl = "https://api.coincap.io/v2/assets/"+ crypto
@@ -50,3 +54,15 @@ var cryptoLookup = function (crypto) {
 // 24 hr change: changePercent24Hr
 //price : priceUsd
 //supply: supply
+
+//Adding API key and information for coins URLs
+var cryptoUrl = "https://api.coinstats.app/public/v1/coins/" + crypto + "?skip=0&limit=10&currency=USD";
+
+fetch(cryptoUrl)
+.then(function (response) {
+  return response.json();
+})
+.then(function (data) {
+  console.log(data)
+  })
+}
