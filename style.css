@@ -11,6 +11,7 @@
 }
 .hero-body{
   background: linear-gradient(to left, rgb(217, 16, 16),rgb(217, 81, 17), rgb(220, 174, 11));
+  
 }
  .button{
 
@@ -27,7 +28,11 @@ background:rgba(205, 203, 203, 0.5);
 }
 .title{
   font-size: 60px;
+  font-family: 'Permanent Marker', cursive;
+
 }
 .message{
 
+}
+#volume, #performance, #price{
 }
