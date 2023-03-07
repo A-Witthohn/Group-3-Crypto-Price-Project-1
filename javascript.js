@@ -74,7 +74,7 @@ var tickerCalls = function(){
       console.log(data)
       for (var i=0; i<10; i++){
         var coinSpan = document.createElement('span')
-        coinSpan.innerHTML = " " + data.data[i].id + " : " + data.data[i].priceUsd + " "
+        coinSpan.innerHTML = " " + data.data[i].id + " : " + parseFloat(data.data[i].priceUsd).toFixed(2) + " "
         scrollTextEl.append(coinSpan)
       }
     })
