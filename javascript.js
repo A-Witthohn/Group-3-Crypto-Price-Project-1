@@ -9,7 +9,7 @@ dropDownButton.addEventListener('click', () =>{
 var btcEl = document.getElementById("btc")
 var ethEl = document.getElementById("eth")
 var ltcEl = document.getElementById("ltc")
-var xrpEl = document.getElementById("xrp")
+var xrpEl = document.getElementById("doge")
 var chosenCoin;
 
 btcEl.addEventListener("click", function(){
@@ -28,7 +28,7 @@ ltcEl.addEventListener("click", function (){
     cryptoUrl(chosenCoin);
 })
 xrpEl.addEventListener("click", function (){
-    chosenCoin = "ripple";
+    chosenCoin = "dogecoin";
     cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
 } )
@@ -44,7 +44,9 @@ var cryptoLookup = function (crypto) {
       return response.json();
     })
     .then(function (data) {
-        //console.log(data.data.volume)
+        console.log("price: " +data.data.priceUsd)
+        console.log("%change24hr: " + data.data.changePercent24Hr)
+        console.log("today's volume: " + data.data.volumeUsd24Hr)
 
 })
 
@@ -65,6 +67,9 @@ fetch(cryptoSites)
   return response.json();
 })
 .then(function (data) {
-  console.log(data.coin.twitterUrl)
+  console.log("Coin symbol: "+data.coin.symbol)
+  console.log("Website: "+ data.coin.websiteUrl)
+  console.log("Twitter: "+data.coin.twitterUrl)
+  console.log("Market cap: "+data.coin.marketCap)
   })
 }
