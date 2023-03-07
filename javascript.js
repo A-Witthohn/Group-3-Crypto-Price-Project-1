@@ -15,21 +15,25 @@ var chosenCoin;
 btcEl.addEventListener("click", function(){
     chosenCoin = "bitcoin";
     cryptoUrl(chosenCoin);
+    cryptoLookUp(chosenCoin);
 })
 ethEl.addEventListener("click", function (){
     chosenCoin = "ethereum";
     cryptoUrl(chosenCoin);
+    cryptoLookUp(chosenCoin);
 })
 ltcEl.addEventListener("click", function (){
     chosenCoin = "litecoin";
     cryptoUrl(chosenCoin);
+    cryptoLookUp(chosenCoin);
 })
 xrpEl.addEventListener("click", function (){
     chosenCoin = "ripple";
     cryptoUrl(chosenCoin);
+    cryptoLookUp(chosenCoin);
 } )
 
-var cryptoUrl = function (crypto) {
+var cryptoLookUp = function (crypto) {
     console.log("chosen coin is " + crypto)
 
     var requestUrl = "https://api.coincap.io/v2/assets/"+ crypto
@@ -51,10 +55,14 @@ var cryptoUrl = function (crypto) {
 //price : priceUsd
 //supply: supply
 
+
 //Adding API key and information for coins URLs
-var cryptoUrl = "https://api.coinstats.app/public/v1/coins/" + crypto + "?skip=0&currency=USD";
-var cryptoUrl = "https://api.coinstats.app/public/v1/coins?skip=0&limit=5&currency=USD"
-fetch(cryptoUrl)
+
+var cryptoUrl = function(crypto) {
+
+var cryptoSites = "https://api.coinstats.app/public/v1/coins/" + crypto + "?skip=0&currency=USD";
+
+fetch(cryptoSites)
 .then(function (response) {
   return response.json();
 })
@@ -62,5 +70,6 @@ fetch(cryptoUrl)
   console.log(data)
   console.log("twitter", data.coin.twitterUrl)
   console.log("website", data.coin.websiteUrl)
+  console.log("icon", data.coin.icon)
   })
 }
