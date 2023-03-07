@@ -21,21 +21,25 @@ btcEl.addEventListener("click", function(){
     chosenCoin = "bitcoin";
     cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
+    dropDown.classList.remove('is-active')
 })
 ethEl.addEventListener("click", function (){
     chosenCoin = "ethereum";
     cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
+    dropDown.classList.remove('is-active')
 })
 ltcEl.addEventListener("click", function (){
     chosenCoin = "litecoin";
     cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
+    dropDown.classList.remove('is-active')
 })
 xrpEl.addEventListener("click", function (){
     chosenCoin = "dogecoin";
     cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
+    dropDown.classList.remove('is-active')
 } )
 
 var cryptoLookup = function (crypto) {
