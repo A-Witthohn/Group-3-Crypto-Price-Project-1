@@ -16,7 +16,9 @@ Then field my last search upon reloading the page in the future.
 ---
 ## Acceptance Criteria
 
-
+<strong><p align="center">
+Project Requirements
+</p></strong>
 <p align="center">
     <img src="./assets/guidelines-project1.PNG" alt="Project Guidelines">
 </p>
@@ -48,7 +50,7 @@ mockup-mobile
 </p></strong>
 
 <p align="center">
-    <img src="./assets/mockup-mobile.PNG" alt="mockup-mobile">
+    <img src="./assets/mockup-mobile.png" alt="mockup-mobile">
 </p>
 
 <strong><p align="center">
@@ -56,7 +58,7 @@ mockup-web
 </p></strong>
 
 <p align="center">
-    <img src="./assets/mockup-web.PNG" alt="mockup-web">
+    <img src="./assets/mockup-web.png" alt="mockup-web">
 </p>
 ---
 ## Deployment 
