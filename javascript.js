@@ -6,6 +6,11 @@ dropDownButton.addEventListener('click', () =>{
     dropDown.classList.toggle('is-active');
 });
 
+var currentPriceEl = document.getElementById('price');
+var performanceEl = document.getElementById('performance');
+var currentVolumeEl = document.getElementById('volume');
+var symbolEl = document.getElementById('symbol');
+
 var btcEl = document.getElementById("btc")
 var ethEl = document.getElementById("eth")
 var ltcEl = document.getElementById("ltc")
@@ -44,6 +49,10 @@ var cryptoLookup = function (crypto) {
       return response.json();
     })
     .then(function (data) {
+        symbolEl.innerHTML = "Coin: " + data.data.symbol;
+        currentPriceEl.innerHTML = "Current Price(USD): " + parseFloat(data.data.priceUsd).toFixed(2)
+        performanceEl.innerHTML = "24-hour Change(%): " + parseFloat(data.data.changePercent24Hr).toFixed(2)
+        currentVolumeEl.innerHTML = "Today' Volume(USD): " + parseFloat(data.data.volumeUsd24Hr).toFixed(2)
         console.log("price: " +data.data.priceUsd)
         console.log("%change24hr: " + data.data.changePercent24Hr)
         console.log("today's volume: " + data.data.volumeUsd24Hr)
@@ -51,6 +60,7 @@ var cryptoLookup = function (crypto) {
 })
 
 }
+
 
 // volume: volumeUsd24Hr
 // 24 hr change: changePercent24Hrc
