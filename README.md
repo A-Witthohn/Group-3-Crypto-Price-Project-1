@@ -5,12 +5,21 @@
 
 Cyrto Lookup was built as a colaboration project by students in the 24 week UNC Software Engineering Bootcamp. As students we were given specific project requirements listed below in the Acceptance Criteria. With those requirments in mind, we began brain storming ideas, specifically ones where we could find public APIs to get access to the information we might need. One idea suggested was of a page that would return stock info after the user input a specific stock ticker. From this we encountered some difficulties in locating APIs that did not require keys, while this was not a complete roadblock, we felt it best to pivot to try to simplify the task at hand. From this, emerged the idea of trying Cyrto Currencies instead. While building our wire frame (images included below) we discussed with our TAs the plan for the layout. After discussing the possible roadblocks in building a search bar that could allow potentially infinite user inputs and how we would try to scope parameters around those searches we again pivoted. This time we decided a drop down menu where the user  selects from five pre-selected cryto coins would again make design easier. Once we had what we felt was a solid wire frame and concept we began to break the project down in Github Projects. We tried to identify all tasks in their smallest forms and created issues for it. Once completed We discussed and assigned people to each task. Finally we built a skeleton template for everyone to work off. The Site presented below in the images and deployment section is our Version 1.0. 
 
-As someone interested in Cryto
+
+
+
+<br>
+
+As someone interested in Cryto 
+
 I want to be able to look up specific coins and see how they are performing. 
-I also want to be able to see where I can find more information on these coins, such as twitter, Reddit, and (...)
+
+I also want to be able to see where I can find more information on these coins, such as Twitter, Reddit, and (...)
 
 When I leave the page 
+
 Then the page will retain my past searches.
+
 Then field my last search upon reloading the page in the future.
 
 ---
@@ -46,7 +55,7 @@ WireFrame - Modal
 ## Mock-Up
 
 <strong><p align="center">
-mockup-mobile
+Mockup-Mobile
 </p></strong>
 
 <p align="center">
@@ -54,13 +63,14 @@ mockup-mobile
 </p>
 
 <strong><p align="center">
-mockup-web
+Mockup-Web
 </p></strong>
 
 <p align="center">
     <img src="./assets/mockup-web.png" alt="mockup-web">
 </p>
 ---
+
 ## Deployment 
 
 
@@ -94,6 +104,6 @@ The second API is CoinCap API 2.0, this info is displayed in the right box on th
 Cryto Lookup was created strictly as an educational tool. It is not an endorsement of any specific Cryto currencies. The infomation provided is to demostrate the understanding and potential implementations of concepts in software engineering. Trade at your own risk!
 
 ## License
----
+
 
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
