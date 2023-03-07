@@ -14,22 +14,18 @@ var chosenCoin;
 
 btcEl.addEventListener("click", function(){
     chosenCoin = "bitcoin";
-    // cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
 })
 ethEl.addEventListener("click", function (){
     chosenCoin = "ethereum";
-    // cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
 })
 ltcEl.addEventListener("click", function (){
     chosenCoin = "litecoin";
-    // cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
 })
 xrpEl.addEventListener("click", function (){
     chosenCoin = "ripple";
-    // cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
 } )
 
@@ -38,13 +34,15 @@ var cryptoUrl = function (crypto) {
 
 
 //Adding API key and information for coins URLs
-var cryptoUrl = "https://api.coinstats.app/public/v1/coins/" + crypto + "?skip=0&limit=10&currency=USD";
-
+var cryptoUrl = "https://api.coinstats.app/public/v1/coins/" + crypto + "?skip=0&currency=USD";
+var cryptoUrl = "https://api.coinstats.app/public/v1/coins?skip=0&limit=5&currency=USD"
 fetch(cryptoUrl)
 .then(function (response) {
   return response.json();
 })
 .then(function (data) {
   console.log(data)
+  console.log("twitter", data.coin.twitterUrl)
+  console.log("website", data.coin.websiteUrl)
   })
 }
