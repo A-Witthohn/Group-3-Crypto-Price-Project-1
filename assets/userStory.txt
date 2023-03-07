@@ -1,7 +1,0 @@
-As a Sports Outlet
-I want to display a live ticker for my fans online
-So That they use our site to follow scores.
-
-Given I am a Football fan
-When I load the page
-Then I see a live ticker across the top displaying NFL scores
