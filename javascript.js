@@ -74,7 +74,7 @@ var tickerCalls = function(){
       console.log(data)
       for (var i=0; i<10; i++){
         var coinSpan = document.createElement('span')
-        coinSpan.innerHTML = (i+1) +"." + data.data[i].id + ": " + parseFloat(data.data[i].priceUsd).toFixed(2) + ",    "
+        coinSpan.innerHTML = (i+1) +". " + data.data[i].id + ": $" + parseFloat(data.data[i].priceUsd).toFixed(2) + ",    "
         scrollTextEl.append(coinSpan)
       }
     })
@@ -94,9 +94,9 @@ fetch(cryptoSites)
   return response.json();
 })
 .then(function (data) {
-  console.log("Coin symbol: "+data.coin.symbol)
-  console.log("Website: "+ data.coin.websiteUrl)
+  console.log("Market cap: "+ parseFloat(data.coin.marketCap).toFixed(0))
+  console.log("Coin supply: "+ data.coin.availableSupply)
+  console.log("Website: "+data.coin.websiteUrl)
   console.log("Twitter: "+data.coin.twitterUrl)
-  console.log("Market cap: "+data.coin.marketCap)
   })
 }
