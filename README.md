@@ -43,6 +43,8 @@ The first API is Public API, This API info is displayed in the left box on the w
 
 The second API is CoinCap API 2.0, this info is displayed in the right box on the webpage or the bottom box seen when scrolling on the mobile.
 
+[CoinCap API 2.0](https://docs.coincap.io/#ee0c0be6-513f-4466-bbb0-2016add462e9)
+
 ## Future Development Ideas 💡
 ---
     1. Seach bar functionality
