@@ -32,6 +32,24 @@ xrpEl.addEventListener("click", function (){
 var cryptoUrl = function (crypto) {
     console.log("chosen coin is " + crypto)
 
+    var requestUrl = "https://api.coincap.io/v2/assets/"+ crypto
+    console.log(requestUrl)
+
+    fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+        console.log(data.data.volume)
+
+})
+
+}
+
+// volume: volumeUsd24Hr
+// 24 hr change: changePercent24Hr
+//price : priceUsd
+//supply: supply
 
 //Adding API key and information for coins URLs
 var cryptoUrl = "https://api.coinstats.app/public/v1/coins/" + crypto + "?skip=0&currency=USD";
