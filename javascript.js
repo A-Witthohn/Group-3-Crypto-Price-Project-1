@@ -5,6 +5,7 @@ const dropDown=document.querySelector('.dropdown');
 dropDownButton.addEventListener('click', () =>{
     dropDown.classList.toggle('is-active');
 });
+var scrollTextEl = document.getElementById('scroll-text')
 
 var currentPriceEl = document.getElementById('price');
 var performanceEl = document.getElementById('performance');
@@ -45,7 +46,7 @@ xrpEl.addEventListener("click", function (){
 var cryptoLookup = function (crypto) {
     console.log("chosen coin is " + crypto)
 
-    var requestUrl = "https://api.coincap.io/v2/assets/"+ crypto
+    var requestUrl = "https://api.coincap.io/v2/assets/" + crypto
     //console.log(requestUrl)
 
     fetch(requestUrl)
@@ -56,20 +57,32 @@ var cryptoLookup = function (crypto) {
         symbolEl.innerHTML = "Coin: " + data.data.symbol;
         currentPriceEl.innerHTML = "Current Price(USD): " + parseFloat(data.data.priceUsd).toFixed(2)
         performanceEl.innerHTML = "24-hour Change(%): " + parseFloat(data.data.changePercent24Hr).toFixed(2)
-        currentVolumeEl.innerHTML = "Today' Volume(USD): " + parseFloat(data.data.volumeUsd24Hr).toFixed(2)
-        console.log("price: " +data.data.priceUsd)
-        console.log("%change24hr: " + data.data.changePercent24Hr)
-        console.log("today's volume: " + data.data.volumeUsd24Hr)
-
-})
-
+        currentVolumeEl.innerHTML = "Today's Volume(USD): " + parseFloat(data.data.volumeUsd24Hr).toFixed(2)
+        //console.log("price: " +data.data.priceUsd)
+        //console.log("%change24hr: " + data.data.changePercent24Hr)
+        //console.log("today's volume: " + data.data.volumeUsd24Hr)
+      })
 }
 
+var tickerCalls = function(){
+  var requestUrl = "https://api.coincap.io/v2/assets/?limit=10"
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data)
+      for (var i=0; i<10; i++){
+        var coinSpan = document.createElement('span')
+        coinSpan.innerHTML = " " + data.data[i].id + " : " + data.data[i].priceUsd + " "
+        scrollTextEl.append(coinSpan)
+      }
+    })
+  }
 
-// volume: volumeUsd24Hr
-// 24 hr change: changePercent24Hrc
-//price : priceUsd
-//supply: supply
+  //setInterval(tickerCalls, 120000)    <--- would make the api call every 2 minutes and update ticker
+  tickerCalls()
+
 
 //Adding API key and information for coins URLs
 var cryptoUrl = function(crypto) {
