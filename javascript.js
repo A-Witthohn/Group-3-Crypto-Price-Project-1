@@ -13,15 +13,15 @@ var xrpEl = document.getElementById("xrp")
 var chosenCoin;
 
 btcEl.addEventListener("click", function(){
-    chosenCoin = "btc";
+    chosenCoin = "bitcoin";
     cryptoLookup(chosenCoin);
 })
 ethEl.addEventListener("click", function (){
-    chosenCoin = "eth";
+    chosenCoin = "ethereum";
     cryptoLookup(chosenCoin);
 })
 ltcEl.addEventListener("click", function (){
-    chosenCoin = "ltc";
+    chosenCoin = "litecoin";
     cryptoLookup(chosenCoin);
 })
 xrpEl.addEventListener("click", function (){
@@ -31,4 +31,22 @@ xrpEl.addEventListener("click", function (){
 
 var cryptoLookup = function (crypto) {
     console.log("chosen coin is " + crypto)
+
+    var requestUrl = "https://api.coincap.io/v2/assets/"+ crypto
+    console.log(requestUrl)
+
+    fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+        console.log(data.data.volume)
+
+})
+
 }
+
+// volume: volumeUsd24Hr
+// 24 hr change: changePercent24Hr
+//price : priceUsd
+//supply: supply
