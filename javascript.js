@@ -102,6 +102,10 @@ var coinSearch = function(coin){
 }
 
 var cryptoLookup = function (crypto) {
+  coinInputEl.classList.add('is-small')
+  coinInputEl.classList.remove('is-large')
+  searchBtnEl.classList.add('is-small')
+  searchBtnEl.classList.remove('is-large')
     console.log("chosen coin is " + crypto)
 
     var requestUrl = "https://api.coincap.io/v2/assets/" + crypto
