@@ -76,14 +76,14 @@
   
 
     <!--Coin name and icon is generated here from Search-->
-    <figure class="image is-96x96 has-image-centered mt-5 startpage is-hidden">
-      <h1 class="mt-4 has-text-centered mb-3"><span id="coin-name"></span></h1>
-      <img class="mt-4" id="coin-image" src="">
+    <h1 class="mt-3 has-text-centered mb-1 startpage is-hidden"><span id="coin-name"></span></h1>
+    <figure class="image is-96x96 has-image-centered mt-2 startpage is-hidden">
+      <img class="mt-1" id="coin-image" src="">
     </figure>
 
 
     <!--Two cards created to call the 2 APIs with the coin search and retrieve data to display here-->
-    <section class="section mb-5 mt-0 startpage is-hidden">
+    <section class="section mb-5 mt-0 pt-0 startpage is-hidden">
       <div class="container has-text-centered">
         <div class="columns">
           <div class="column">
@@ -120,13 +120,13 @@
     <!--opening modal with disclaimer-->
     <div class="modal is-active">
       <div class="modal-background">
-        <div class="modal-content has-background-white py-5 px-5">
-          <img class="has-image-centered" src="./assets/Leo Dollar Bill.jpg"
+        <div class="modal-content has-background-warning py-5 px-5">
+          <img class="has-image-centered" id="leo-pic" src="./assets/Leo Dollar Bill.jpg"
             alt="Wolf of Wall Street Leo(holding dollar)">
-          <h3 class="title mb-6 has-text-centered">Disclaimer!</h3>
+          <h1 class="has-text-centered has-text-weight-bold">Disclaimer!</h1>
           <p>This site was made strictly to provide information. It was built as a demonstration of technical skills
-            obtained through the UNC Coding Bootcamp. Trade scrictly at your own risk.</p>
-          <button id="modal-x-btn" class="delete" aria-label="delete"></button>
+            obtained through the UNC Coding Bootcamp. Trade strictly at your own risk. This is not financial advice.</p>
+          <button id="modal-x-btn" class="delete is-large" aria-label="delete"></button>
         </div>
       </div>
     </div>
@@ -135,7 +135,7 @@
 
   <!--dynamically generated ticker animation with top 20 cryptos from API call, scrolling animation-->
   <footer class="footer">
-    <div class="content is-fullwidth has-background-black" id="scroll-container">
+    <div class="content mt-0 is-fullwidth has-background-black" id="scroll-container">
         <p id="scroll-text"></p>
     </div>
   </footer>

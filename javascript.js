@@ -82,8 +82,6 @@ document.querySelector('#new-coin').addEventListener('keypress', function (e) {
   }
 });
 
-//array to store top100 cryptos from coincap API call, includes symbols, names, and id's
-var top100 = [];
 
 //function to search for coin symbols to return data if they are in the top100
 var coinSearch = function(coin){
@@ -96,9 +94,6 @@ var coinSearch = function(coin){
     })
     .then(function (data) {
       for (var i=0; i<100; i++) {
-        top100.push(data.data[i].symbol)
-        top100.push(data.data[i].id)
-        top100.push(data.data[i].name)
         if (data.data[i].symbol == toUpperCoin || data.data[i].name.toUpperCase() == toUpperCoin || data.data[i].id.toUpperCase() == toUpperCoin){
           cryptoLookup(data.data[i].id)
           cryptoUrl(data.data[i].id)
@@ -156,7 +151,7 @@ var tickerCalls = function(){
       console.log(data)
       for (var i=0; i<20; i++){
         var coinSpan = document.createElement('span')
-        coinSpan.innerHTML = "      " + data.data[i].symbol + ": $" + parseFloat(data.data[i].priceUsd).toFixed(2) + "    "
+        coinSpan.innerHTML = " &emsp; " + data.data[i].symbol + ": $" + parseFloat(data.data[i].priceUsd).toFixed(2) + "  &emsp;"
         scrollTextEl.append(coinSpan)
         if (data.data[i].changePercent24Hr > 0){
           coinSpan.classList.add('green')
@@ -222,7 +217,7 @@ loadStorage();
 $(function () {
   top100Coins
   $('#new-coin').autocomplete({
-    source: top100Coins,
+    source: top100Coins
   });
 });
 
@@ -236,6 +231,8 @@ fetch(requestUrl)
   console.log(data)
   for (var i=0; i<100; i++) {
     top100Coins.push(data.data[i].symbol)
-    top100Coins.push(data.data[i].id)
+    if (data.data[i].symbol !== data.data[i].name){
+    top100Coins.push(data.data[i].name)
+    }
   }
 })
