@@ -65,16 +65,16 @@ var cryptoLookup = function (crypto) {
 }
 
 var tickerCalls = function(){
-  var requestUrl = "https://api.coincap.io/v2/assets/?limit=10"
+  var requestUrl = "https://api.coincap.io/v2/assets/?limit=20"
   fetch(requestUrl)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
       console.log(data)
-      for (var i=0; i<10; i++){
+      for (var i=0; i<20; i++){
         var coinSpan = document.createElement('span')
-        coinSpan.innerHTML = (i+1) +". " + data.data[i].symbol + ": $" + parseFloat(data.data[i].priceUsd).toFixed(2) + ",    "
+        coinSpan.innerHTML = "      " + data.data[i].symbol + ": $" + parseFloat(data.data[i].priceUsd).toFixed(2) + "    "
         scrollTextEl.append(coinSpan)
       }
     })
