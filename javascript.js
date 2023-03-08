@@ -129,6 +129,13 @@ var cryptoLookup = function (crypto) {
         coinNameEl.innerHTML = data.data.name
         currentPriceEl.innerHTML = " $" + parseFloat(data.data.priceUsd).toLocaleString('en-US', {maximumFractionDigits:2})
         performanceEl.innerHTML = " " + parseFloat(data.data.changePercent24Hr).toFixed(2) + "%"
+        if (data.data.changePercent24Hr > 0) {
+          performanceEl.classList.add('green')
+          performanceEl.classList.remove('red')
+        } else if (data.data.changePercent24Hr < 0){
+          performanceEl.classList.add('red')
+          performanceEl.classList.remove('green')
+        }
         currentVolumeEl.innerHTML = " $" + parseFloat(data.data.volumeUsd24Hr).toLocaleString('en-US', {maximumFractionDigits:2});
         //console.log("price: " +data.data.priceUsd)
         //console.log("%change24hr: " + data.data.changePercent24Hr)
@@ -149,8 +156,15 @@ var tickerCalls = function(){
       console.log(data)
       for (var i=0; i<20; i++){
         var coinSpan = document.createElement('span')
-        coinSpan.innerHTML = "      " + data.data[i].symbol + ": $" + parseFloat(data.data[i].priceUsd).toFixed(2) + "    "
+        coinSpan.innerHTML = "      " + data.data[i].symbol + ": $" + parseFloat(data.data[i].priceUsd).toFixed(4) + "    "
         scrollTextEl.append(coinSpan)
+        if (data.data[i].changePercent24Hr > 0){
+          coinSpan.classList.add('green')
+          coinSpan.classList.remove('red')
+        } else if (data.data[i].changePercent24Hr < 0){
+        coinSpan.classList.add('red')
+        coinSpan.classList.remove('green')
+      }
       }
     })
   }
