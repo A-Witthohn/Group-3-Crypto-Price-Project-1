@@ -82,8 +82,6 @@ document.querySelector('#new-coin').addEventListener('keypress', function (e) {
   }
 });
 
-//array to store top100 cryptos from coincap API call, includes symbols, names, and id's
-var top100 = [];
 
 //function to search for coin symbols to return data if they are in the top100
 var coinSearch = function(coin){
@@ -96,9 +94,6 @@ var coinSearch = function(coin){
     })
     .then(function (data) {
       for (var i=0; i<100; i++) {
-        top100.push(data.data[i].symbol)
-        top100.push(data.data[i].id)
-        top100.push(data.data[i].name)
         if (data.data[i].symbol == toUpperCoin || data.data[i].name.toUpperCase() == toUpperCoin || data.data[i].id.toUpperCase() == toUpperCoin){
           cryptoLookup(data.data[i].id)
           cryptoUrl(data.data[i].id)
@@ -223,6 +218,7 @@ $(function () {
   top100Coins
   $('#new-coin').autocomplete({
     source: top100Coins,
+    minLength: 2
   });
 });
 
@@ -236,6 +232,6 @@ fetch(requestUrl)
   console.log(data)
   for (var i=0; i<100; i++) {
     top100Coins.push(data.data[i].symbol)
-    top100Coins.push(data.data[i].id)
+    top100Coins.push(data.data[i].name)
   }
 })
