@@ -64,7 +64,7 @@ var chosenCoin;
 
 // } )
 
-//grab input from search bar and run coinSearch on it
+//grab input from search bar and run coinSearch on it when Search button clicked
 searchBtnEl.addEventListener('click', function(event){
   event.preventDefault();
   if (coinInputEl.value == null ){
@@ -72,6 +72,15 @@ searchBtnEl.addEventListener('click', function(event){
   } else
   coinSearch(coinInputEl.value);
 })
+//grab input from search bar and run coinSearch on it when Enter is pressed
+document.querySelector('#new-coin').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    if (coinInputEl.value == null ){
+      return;
+    } else
+    coinSearch(coinInputEl.value);
+  }
+});
 
 //array to store top100 cryptos from coincap API call, includes symbols, names, and id's
 var top100 = [];
