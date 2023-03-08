@@ -107,6 +107,7 @@ font-size: 20px;
 
 #scroll-text {
   font-size: 24px;
+  font-weight: bold;
   /* animation properties */
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
