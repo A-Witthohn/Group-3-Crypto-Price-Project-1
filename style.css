@@ -33,9 +33,8 @@ background:rgba(205, 203, 203, 0.5);
 }
 .title{
   font-size: 60px;
-  font-family: cursive;
   text-decoration: underline;
-  text-underline-offset: 28px;
+  text-underline-offset: 17px;
 
 }
 .message{
