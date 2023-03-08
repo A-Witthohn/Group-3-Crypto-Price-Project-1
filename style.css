@@ -5,6 +5,10 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+body{
+  min-height: 100vh;
+}
+
 .card {
   background: rgba(228, 164, 96, 0.5)!important;
   border-radius: 0.70rem;
@@ -29,7 +33,9 @@ background:rgba(205, 203, 203, 0.5);
 }
 .title{
   font-size: 60px;
-  font-family: 'Permanent Marker', cursive;
+  font-family: cursive;
+  text-decoration: underline;
+  text-underline-offset: 28px;
 
 }
 .message{
@@ -39,10 +45,21 @@ background:rgba(205, 203, 203, 0.5);
 #volume, #performance, #price{
 
 }
+
+
+
+
+  .footer{
+    padding: 0px;
+    margin-top: auto;
+  }
+
+
 #scroll-container {
   border: 3px solid black;
   border-radius: 5px;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 #scroll-text {
@@ -81,3 +98,10 @@ background:rgba(205, 203, 203, 0.5);
     transform: translateX(-100%);
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+  .dropdown{
+    width: 100%;
+    justify-content: center;
+}}

@@ -31,7 +31,7 @@
     <main>
         <div class="dropdown">
             <div class="dropdown-trigger">
-              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropDownButton">
                 <span>Select a Currency</span>
                 <span class="icon is-small">
                   <i class="fas fa-angle-down" aria-hidden="true"></i>
@@ -46,7 +46,7 @@
                 <a class="dropdown-item" id="eth">
                   Ethereum
                 </a>
-                <a href="#" class="dropdown-item is-active" id="ltc">
+                <a href="#" class="dropdown-item" id="ltc">
                   Litecoin
                 </a>
                 <a href="#" class="dropdown-item" id="doge">
@@ -57,17 +57,22 @@
             </div>
           </div>
 
+          <form>
+            <input type="text" placeholder="Search for a Coin">
+            <button>Search</button>
+          </form>
 
 
         <section class="section">
             <div class="container has-text-centered">
                 <div class="columns">
                     <div class="column">
-                      <h1 class="is-size-1 title">Current Crypto Data</h1>
+                      <h1 class="is-size-1 title">Crypto Data</h1>
                       <div class="card">
-                        <figure class="image is-64x64 has-image-centered">
+                        <h2 id="symbol"></h2>
+                        <!-- <figure class="image is-64x64 has-image-centered">
                             <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                          </figure>
+                          </figure>   -->
                         <div class="card-content">
                           <div class="content" id="coin-data">
                             <p id="price">Current Price:</p>
@@ -81,11 +86,14 @@
                     <div class="column">
                       <h1 class="is-size-1 title">Coin Info</h1>
                       <div class="card">
-                        <figure class="image is-64x64 has-image-centered">
+                        <!--<figure class="image is-64x64 has-image-centered">
                             <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                          </figure>
+                          </figure> -->
                         <div class="card-content">
                           <div class="content" id="coin-resources">
+                            <p id="market-cap">Market Cap:</p>
+                            <p id="website">Website:</p>
+                            <p id="twitter">Twitter:</p>
                           </div>
                         </div>
                       </div>
@@ -93,6 +101,7 @@
             </div>
             </div>
             </section>
+            <!--
             <article class="message is-info">
                 <div class="message-header">
                     <div class="has-text-centered">
@@ -108,23 +117,22 @@
             </div>
             </div>
 </div>
-</article>
+</article> -->
 <!--modal-->
 <div class="modal">
     <div class="modal-background">
         <div class="modal-content has-background-white py-5 px-5">
             <h3 class="title mb-6">Title for the modal</h3>
+            <button class="delete" aria-label="delete"></button>
         </div>
     </div>
 </div>
 
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered" id="scroll-container">
-                <p id="scroll-text"><strong>Created by Emily Miles, Aaron Witthohn, Spencer Hill...</strong></p>
+            <div class="content is-fullwidth " id="scroll-container">
+                <p id="scroll-text"><strong></strong></p>
             </div>
-        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="javascript.js"></script>
