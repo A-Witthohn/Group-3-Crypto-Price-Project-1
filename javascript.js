@@ -7,6 +7,11 @@ dropDownButton.addEventListener('click', () =>{
 });
 var scrollTextEl = document.getElementById('scroll-text')
 
+var modalBtn = document.getElementById('modal-x-btn')
+modalBtn.addEventListener('click', function(){
+  modal.classList.remove('is-active')
+})
+
 var currentPriceEl = document.getElementById('price');
 var performanceEl = document.getElementById('performance');
 var currentVolumeEl = document.getElementById('volume');
