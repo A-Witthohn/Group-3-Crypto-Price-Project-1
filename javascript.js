@@ -217,3 +217,25 @@ var loadStorage = function() {
 }
 
 loadStorage();
+
+// Autocomplete widget
+$(function () {
+  top100Coins
+  $('#new-coin').autocomplete({
+    source: top100Coins,
+  });
+});
+
+var top100Coins = []
+var requestUrl = "https://api.coincap.io/v2/assets?limit=100"
+fetch(requestUrl)
+.then(function (response) {
+  return response.json();
+})
+.then(function (data) {
+  console.log(data)
+  for (var i=0; i<100; i++) {
+    top100Coins.push(data.data[i].symbol)
+    top100Coins.push(data.data[i].id)
+  }
+})
