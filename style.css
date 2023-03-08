@@ -219,6 +219,11 @@ font-size: 20px;
     width: 266px;
   }
 
+  #modal-x-btn {
+    top: 20px;
+    right: 30px;
+  }
+
 }
 
 
