@@ -118,9 +118,9 @@ var cryptoLookup = function (crypto) {
     .then(function (data) {
         symbolEl.innerHTML = "Coin: " + data.data.symbol;
         coinNameEl.innerHTML = data.data.name
-        currentPriceEl.innerHTML = "Current Price: $" + parseFloat(data.data.priceUsd).toLocaleString('en-US', {maximumFractionDigits:2})
-        performanceEl.innerHTML = "24-hour Change: " + parseFloat(data.data.changePercent24Hr).toFixed(2) + "%"
-        currentVolumeEl.innerHTML = "Today's Volume: $" + parseFloat(data.data.volumeUsd24Hr).toLocaleString('en-US', {maximumFractionDigits:2});
+        currentPriceEl.innerHTML = " $" + parseFloat(data.data.priceUsd).toLocaleString('en-US', {maximumFractionDigits:2})
+        performanceEl.innerHTML = " " + parseFloat(data.data.changePercent24Hr).toFixed(2) + "%"
+        currentVolumeEl.innerHTML = " $" + parseFloat(data.data.volumeUsd24Hr).toLocaleString('en-US', {maximumFractionDigits:2});
         //console.log("price: " +data.data.priceUsd)
         //console.log("%change24hr: " + data.data.changePercent24Hr)
         //console.log("today's volume: " + data.data.volumeUsd24Hr)
