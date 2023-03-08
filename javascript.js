@@ -93,6 +93,7 @@ var tickerCalls = function(){
 
 //Adding API key and information for coins URLs
 var marketCapEl = document.getElementById("market-cap")
+var rankEl = document.getElementById("ranking")
 var websiteEl = document.getElementById("website")
 var twitterEl = document.getElementById("twitter")
 
@@ -107,7 +108,8 @@ fetch(cryptoSites)
   return response.json();
 })
 .then(function (data) {
-
+console.log(data)
+  rankEl.innerHTML = data.coin.rank
   marketCapEl.innerHTML = parseFloat(data.coin.marketCap).toFixed(0);
   websiteEl.innerHTML = data.coin.websiteUrl
   websiteEl.setAttribute("href", data.coin.websiteUrl)
