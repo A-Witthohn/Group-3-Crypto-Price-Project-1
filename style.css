@@ -92,13 +92,13 @@ background:rgba(205, 203, 203, 0.5);
 /* for Firefox */
 @-moz-keyframes my-animation {
   from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-200%); }
+  to { -moz-transform: translateX(-250%); }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
   from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-200%); }
+  to { -webkit-transform: translateX(-250%); }
 }
 
 @keyframes my-animation {
@@ -108,9 +108,9 @@ background:rgba(205, 203, 203, 0.5);
     transform: translateX(100%);
   }
   to {
-    -moz-transform: translateX(-200%);
-    -webkit-transform: translateX(-200%);
-    transform: translateX(-200%);
+    -moz-transform: translateX(-250%);
+    -webkit-transform: translateX(-250%);
+    transform: translateX(-250%);
   }
 }
 
@@ -133,13 +133,13 @@ background:rgba(205, 203, 203, 0.5);
   /* for Firefox */
   @-moz-keyframes my-animation {
     from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-200%); }
+    to { -moz-transform: translateX(-325%); }
   }
   
   /* for Chrome */
   @-webkit-keyframes my-animation {
     from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-200%); }
+    to { -webkit-transform: translateX(-325%); }
   }
   
   @keyframes my-animation {
@@ -149,9 +149,9 @@ background:rgba(205, 203, 203, 0.5);
       transform: translateX(100%);
     }
     to {
-      -moz-transform: translateX(-200%);
-      -webkit-transform: translateX(-200%);
-      transform: translateX(-200%);
+      -moz-transform: translateX(-325%);
+      -webkit-transform: translateX(-325%);
+      transform: translateX(-325%);
     }
   }
 }
@@ -159,7 +159,7 @@ background:rgba(205, 203, 203, 0.5);
 
 /* MAX WIDTH 1000 PX */
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 950px){
   #scroll-text {
     font-size: 24px;
     /* animation properties */
@@ -169,19 +169,19 @@ background:rgba(205, 203, 203, 0.5);
     
     -moz-animation: my-animation 15s linear infinite;
     -webkit-animation: my-animation 15s linear infinite;
-    animation: my-animation 100s linear infinite;
+    animation: my-animation 15s linear infinite;
   }
   
   /* for Firefox */
   @-moz-keyframes my-animation {
     from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-200%); }
+    to { -moz-transform: translateX(-370%); }
   }
   
   /* for Chrome */
   @-webkit-keyframes my-animation {
     from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-200%); }
+    to { -webkit-transform: translateX(-370%); }
   }
   
   @keyframes my-animation {
@@ -191,9 +191,9 @@ background:rgba(205, 203, 203, 0.5);
       transform: translateX(100%);
     }
     to {
-      -moz-transform: translateX(-200%);
-      -webkit-transform: translateX(-200%);
-      transform: translateX(-200%);
+      -moz-transform: translateX(-370%);
+      -webkit-transform: translateX(-370%);
+      transform: translateX(-370%);
     }
   }
 }
@@ -204,7 +204,8 @@ background:rgba(205, 203, 203, 0.5);
 @media only screen and (max-width: 768px){
   .dropdown{
     width: 100%;
-    justify-content: center;
+    justify-content: center;}
+
     #scroll-text {
       font-size: 24px;
       /* animation properties */
@@ -220,13 +221,13 @@ background:rgba(205, 203, 203, 0.5);
     /* for Firefox */
     @-moz-keyframes my-animation {
       from { -moz-transform: translateX(100%); }
-      to { -moz-transform: translateX(-200%); }
+      to { -moz-transform: translateX(-480%); }
     }
     
     /* for Chrome */
     @-webkit-keyframes my-animation {
       from { -webkit-transform: translateX(100%); }
-      to { -webkit-transform: translateX(-200%); }
+      to { -webkit-transform: translateX(-480%); }
     }
     
     @keyframes my-animation {
@@ -236,12 +237,12 @@ background:rgba(205, 203, 203, 0.5);
         transform: translateX(100%);
       }
       to {
-        -moz-transform: translateX(-200%);
-        -webkit-transform: translateX(-200%);
-        transform: translateX(-200%);
+        -moz-transform: translateX(-480%);
+        -webkit-transform: translateX(-480%);
+        transform: translateX(-480%);
       }
     }
-}}
+}
 
 
 /* MAX WIDTH 600 PX */
@@ -263,13 +264,13 @@ background:rgba(205, 203, 203, 0.5);
   /* for Firefox */
   @-moz-keyframes my-animation {
     from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-200%); }
+    to { -moz-transform: translateX(-640%); }
   }
   
   /* for Chrome */
   @-webkit-keyframes my-animation {
     from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-200%); }
+    to { -webkit-transform: translateX(-640%); }
   }
   
   @keyframes my-animation {
@@ -279,9 +280,9 @@ background:rgba(205, 203, 203, 0.5);
       transform: translateX(100%);
     }
     to {
-      -moz-transform: translateX(-200%);
-      -webkit-transform: translateX(-200%);
-      transform: translateX(-200%);
+      -moz-transform: translateX(-640%);
+      -webkit-transform: translateX(-640%);
+      transform: translateX(-640%);
     }
   }
 }
@@ -306,13 +307,13 @@ background:rgba(205, 203, 203, 0.5);
   /* for Firefox */
   @-moz-keyframes my-animation {
     from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-200%); }
+    to { -moz-transform: translateX(-800%); }
   }
   
   /* for Chrome */
   @-webkit-keyframes my-animation {
     from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-200%); }
+    to { -webkit-transform: translateX(-800%); }
   }
   
   @keyframes my-animation {
@@ -322,9 +323,9 @@ background:rgba(205, 203, 203, 0.5);
       transform: translateX(100%);
     }
     to {
-      -moz-transform: translateX(-200%);
-      -webkit-transform: translateX(-200%);
-      transform: translateX(-200%);
+      -moz-transform: translateX(-800%);
+      -webkit-transform: translateX(-800%);
+      transform: translateX(-800%);
     }
   }
 }
