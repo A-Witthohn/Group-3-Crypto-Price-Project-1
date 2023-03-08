@@ -1,109 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Crypto Lookup</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rampart+One&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Crypto Lookup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rampart+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header>
+  <header>
     <section class="hero is-primary">
-        <div class="hero-body">
-            <div class="container">
-              <div class="titleWrapper">
-    <h1 class="title has-text-centered" id="pageTitle">Crypto Stats Lookup</h1>
-    <h2 class="subtitle has-text-centered" id="date-time"></h2>
-</div>
-    </div>
-    </div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="titleWrapper">
+            <h1 class="title has-text-centered" id="pageTitle">Crypto Stats Lookup</h1>
+            <h2 class="subtitle has-text-centered" id="date-time"></h2>
+          </div>
+        </div>
+      </div>
     </section>
-</header>
+  </header>
 
 
-    <main>
-        <div class="dropdown">
-            <div class="dropdown-trigger">
-              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropDownButton">
-                <span>Select a Currency</span>
-                <span class="icon is-small">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </div>
-            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-              <div class="dropdown-content">
-                <a href="#" class="dropdown-item" id="btc">
-                  Bitcoin
-                </a>
-                <a class="dropdown-item" id="eth">
-                  Ethereum
-                </a>
-                <a href="#" class="dropdown-item" id="ltc">
-                  Litecoin
-                </a>
-                <a href="#" class="dropdown-item" id="doge">
-                  Dogecoin
-                </a>
-              
+  <main>
+    <div class="dropdown">
+      <div class="dropdown-trigger">
+        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropDownButton">
+          <span>Select a Currency</span>
+          <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item" id="btc">
+            Bitcoin
+          </a>
+          <a class="dropdown-item" id="eth">
+            Ethereum
+          </a>
+          <a href="#" class="dropdown-item" id="ltc">
+            Litecoin
+          </a>
+          <a href="#" class="dropdown-item" id="doge">
+            Dogecoin
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <form class="form has-text-centered" id="search-form">
+        <input id="new-coin" type="text" placeholder="Search for a Coin">
+        <button id="search-btn">Search</button>
+      </form>
+    </section>
+
+
+    <section class="section">
+      <div class="container has-text-centered">
+        <div class="columns">
+          <div class="column">
+            <h1 class="is-size-1 title">Crypto Data</h1>
+            <div class="card">
+              <h2 id="symbol"></h2>
+              <!-- <figure class="image is-64x64 has-image-centered">
+                            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                          </figure>   -->
+              <div class="card-content">
+                <div class="content" id="coin-data">
+                  <p id="price">Current Price:</p>
+                  <p id="performance">24 Hour Performance:</p>
+                  <p id="volume">Volume:</p>
+
+                </div>
               </div>
             </div>
           </div>
-
-          <form>
-            <input id="new-coin" type="text" placeholder="Search for a Coin">
-            <button id="search-btn" >Search</button>
-          </form>
-
-
-        <section class="section">
-            <div class="container has-text-centered">
-                <div class="columns">
-                    <div class="column">
-                      <h1 class="is-size-1 title">Crypto Data</h1>
-                      <div class="card">
-                        <h2 id="symbol"></h2>
-                        <!-- <figure class="image is-64x64 has-image-centered">
-                            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                          </figure>   -->
-                        <div class="card-content">
-                          <div class="content" id="coin-data">
-                            <p id="price">Current Price:</p>
-                            <p id="performance">24 Hour Performance:</p>
-                            <p id="volume">Volume:</p>
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <h1 class="is-size-1 title">Coin Info</h1>
-                      <div class="card">
-                        <h2><span id="ranking"></span></h2>
-                        <!--<figure class="image is-64x64 has-image-centered">
+          <div class="column">
+            <h1 class="is-size-1 title">Coin Info</h1>
+            <div class="card">
+              <h2><span id="ranking"></span></h2>
+              <!--<figure class="image is-64x64 has-image-centered">
                             <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
                           </figure> -->
-                        <div class="card-content">
-                          <div class="content" id="coin-resources">
-                            <p>Market Cap: <span id="market-cap"></span> </p>
-                            <p>Website: <a id="website" href=""></a></p>
-                            <p>Twitter: <a id="twitter" href=""></a></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              <div class="card-content">
+                <div class="content" id="coin-resources">
+                  <p>Market Cap: <span id="market-cap"></span> </p>
+                  <p>Website: <a id="website" href=""></a></p>
+                  <p>Twitter: <a id="twitter" href=""></a></p>
+                </div>
+              </div>
             </div>
-            </div>
-            </section>
-            <!--
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
             <article class="message is-info">
                 <div class="message-header">
                     <div class="has-text-centered">
@@ -120,23 +124,26 @@
             </div>
 </div>
 </article> -->
-<!--modal-->
-<div class="modal is-active">
-    <div class="modal-background">
+    <!--modal-->
+    <div class="modal is-active">
+      <div class="modal-background">
         <div class="modal-content has-background-white py-5 px-5">
-            <h3 class="title mb-6">Title for the modal</h3>
-            <button id="modal-x-btn" class="delete" aria-label="delete"></button>
+          <h3 class="title mb-6">Title for the modal</h3>
+          <button id="modal-x-btn" class="delete" aria-label="delete"></button>
         </div>
+      </div>
     </div>
-</div>
 
-    </main>
-    <footer class="footer">
-            <div class="content is-fullwidth" id="scroll-container">
-              <strong><p id="scroll-text"></p></strong>
-            </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="javascript.js"></script>
+  </main>
+  <footer class="footer">
+    <div class="content is-fullwidth" id="scroll-container">
+      <strong>
+        <p id="scroll-text"></p>
+      </strong>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="javascript.js"></script>
 </body>
+
 </html>
