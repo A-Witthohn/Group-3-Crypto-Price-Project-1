@@ -40,7 +40,7 @@ background:rgba(205, 203, 203, 0.5);
 }
 @keyframes animate{
   to{
-      background-position: -4500vh;
+      background-position: -2500vh;
   }
 }
 
@@ -118,9 +118,9 @@ font-size: 20px;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   
-  -moz-animation: my-animation 15s linear infinite;
-  -webkit-animation: my-animation 15s linear infinite;
-  animation: my-animation 15s linear infinite;
+  -moz-animation: my-animation 25s linear infinite;
+  -webkit-animation: my-animation 25s linear infinite;
+  animation: my-animation 25s linear infinite;
 }
 
 /* for Firefox */
