@@ -85,6 +85,11 @@ var tickerCalls = function(){
 
 
 //Adding API key and information for coins URLs
+marketCapEl = document.getElementById("market-cap")
+twitterEl = document.getElementById("twitter")
+
+
+
 var cryptoUrl = function(crypto) {
 
 var cryptoSites ="https://api.coinstats.app/public/v1/coins/" + crypto + "?skip=0&limit=10&currency=USD"
@@ -94,9 +99,24 @@ fetch(cryptoSites)
   return response.json();
 })
 .then(function (data) {
+
+
   console.log("Market cap: "+ parseFloat(data.coin.marketCap).toFixed(0))
   console.log("Coin supply: "+ data.coin.availableSupply)
   console.log("Website: "+data.coin.websiteUrl)
   console.log("Twitter: "+data.coin.twitterUrl)
   })
+}
+
+var displayUrls = function () {
+
+  var coinResourcesContainer = document.getElementById("coin-resources")
+  var repoEl = document.createElement('ul');
+
+  repoEl.classList = 'list-item flex-row justify-space-between align-center';
+
+  var listEl = document.createElement("li")
+
+  
+
 }
