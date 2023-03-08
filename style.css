@@ -66,6 +66,10 @@ background:rgba(205, 203, 203, 0.5);
   padding-right: 20px;
 }
 
+.ui-helper-hidden-accessible {
+  display: none;
+}
+
 
 
 #search-form{
