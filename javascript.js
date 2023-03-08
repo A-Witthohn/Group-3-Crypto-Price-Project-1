@@ -231,6 +231,8 @@ fetch(requestUrl)
   console.log(data)
   for (var i=0; i<100; i++) {
     top100Coins.push(data.data[i].symbol)
+    if (data.data[i].symbol !== data.data[i].name){
     top100Coins.push(data.data[i].name)
+    }
   }
 })

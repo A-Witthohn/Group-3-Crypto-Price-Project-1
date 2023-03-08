@@ -57,7 +57,7 @@ background:rgba(205, 203, 203, 0.5);
 .ui-autocomplete {
   border: 1px solid slategray;
   max-width: 25%;
-  background-color: rgb(237, 233, 94);
+  background-color: rgba(102, 245, 238, 0.5);
   max-height: 150px;
   overflow-y: auto;
             /* prevent horizontal scrollbar */
