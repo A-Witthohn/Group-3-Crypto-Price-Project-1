@@ -116,6 +116,20 @@ font-size: 20px;
   right: 3px;
 }
 
+#leo-pic{
+  max-height: 400px;
+  max-width: 533px;
+  height: 400px;
+  width: 533px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.modal-background {
+  padding: auto;
+}
+
 
 
   .footer{
