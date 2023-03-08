@@ -32,7 +32,7 @@
 
 
   <main>
-    <div class="dropdown">
+    <!-- <div class="dropdown">
       <div class="dropdown-trigger">
         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropDownButton">
           <span>Select a Currency</span>
@@ -58,26 +58,27 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
     <section>
-      <form class="form has-text-centered" id="search-form">
+      <form class="form has-text-centered mt-3" id="search-form">
         <input id="new-coin" type="text" placeholder="Search for a Coin">
         <button id="search-btn">Search</button>
       </form>
+      <figure class="image is-64x64 has-image-centered mt-3">
+        <img id="coin-image" src="">
+        <h1 class="mt-4"><strong><span id="coin-name"></span></strong></h1>
+      </figure>
     </section>
 
 
-    <section class="section">
+    <section class="section mb-5 mt-0">
       <div class="container has-text-centered">
         <div class="columns">
           <div class="column">
             <h1 class="is-size-1 title">Crypto Data</h1>
             <div class="card">
               <h2 id="symbol"></h2>
-              <!-- <figure class="image is-64x64 has-image-centered">
-                            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                          </figure>   -->
               <div class="card-content">
                 <div class="content" id="coin-data">
                   <p id="price">Current Price:</p>
@@ -91,10 +92,7 @@
           <div class="column">
             <h1 class="is-size-1 title">Coin Info</h1>
             <div class="card">
-              <h2><span id="ranking"></span></h2>
-              <!--<figure class="image is-64x64 has-image-centered">
-                            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                          </figure> -->
+              <h2><span id="ranking"></span></h2>            
               <div class="card-content">
                 <div class="content" id="coin-resources">
                   <p>Market Cap: <span id="market-cap"></span> </p>
