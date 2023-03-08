@@ -12,6 +12,9 @@ modalBtn.addEventListener('click', function(){
   modal.classList.remove('is-active')
 })
 
+var coinInputEl = document.getElementById('new-coin');
+var searchBtnEl = document.getElementById('search-btn')
+
 var currentPriceEl = document.getElementById('price');
 var performanceEl = document.getElementById('performance');
 var currentVolumeEl = document.getElementById('volume');
@@ -54,6 +57,43 @@ xrpEl.addEventListener("click", function (){
     localStorage.setItem("chosenCoin", chosenCoin);
 
 } )
+
+//grab input from search bar and run coinSearch on it
+searchBtnEl.addEventListener('click', function(event){
+  event.preventDefault();
+  if (coinInputEl.value == null ){
+    return;
+  } else
+  coinSearch(coinInputEl.value);
+})
+
+//array to store top100 cryptos from coincap API call, includes symbols, names, and id's
+var top100 = [];
+
+//function to search for coin symbols to return data if they are in the top100
+var coinSearch = function(coin){
+  console.log("coin input: " + coin)
+  var toUpperCoin = coin.toUpperCase();
+  var requestUrl = "https://api.coincap.io/v2/assets?limit=100"
+    fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      for (var i=0; i<100; i++) {
+        top100.push(data.data[i].symbol)
+        top100.push(data.data[i].id)
+        top100.push(data.data[i].name)
+        if (data.data[i].symbol == toUpperCoin || data.data[i].name.toUpperCase() == toUpperCoin || data.data[i].id.toUpperCase() == toUpperCoin){
+          cryptoLookup(data.data[i].id)
+          cryptoUrl(data.data[i].id)
+          console.log("found " + data.data[i].id)
+          chosenCoin = data.data[i].id
+          localStorage.setItem("chosenCoin", chosenCoin)
+        }
+      }
+  })
+}
 
 var cryptoLookup = function (crypto) {
     console.log("chosen coin is " + crypto)
