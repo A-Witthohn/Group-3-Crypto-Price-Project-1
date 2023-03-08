@@ -85,8 +85,9 @@ var tickerCalls = function(){
 
 
 //Adding API key and information for coins URLs
-marketCapEl = document.getElementById("market-cap")
-twitterEl = document.getElementById("twitter")
+var marketCapEl = document.getElementById("market-cap")
+var websiteEl = document.getElementById("website")
+var twitterEl = document.getElementById("twitter")
 
 
 
@@ -100,23 +101,15 @@ fetch(cryptoSites)
 })
 .then(function (data) {
 
-
-  console.log("Market cap: "+ parseFloat(data.coin.marketCap).toFixed(0))
-  console.log("Coin supply: "+ data.coin.availableSupply)
-  console.log("Website: "+data.coin.websiteUrl)
-  console.log("Twitter: "+data.coin.twitterUrl)
+  marketCapEl.innerHTML = parseFloat(data.coin.marketCap).toFixed(0);
+  websiteEl.innerHTML = data.coin.websiteUrl
+  websiteEl.setAttribute("href", data.coin.websiteUrl)
+  websiteEl.setAttribute("target", "_blank")
+  twitterEl.innerHTML = data.coin.twitterUrl
+  twitterEl.setAttribute("href", data.coin.twitterUrl)
+  twitterEl.setAttribute("target", "_blank")
+  // console.log("Market cap: "+ parseFloat(data.coin.marketCap).toFixed(0))
+  // console.log("Website: "+data.coin.websiteUrl)
+  // console.log("Twitter: "+data.coin.twitterUrl)
   })
-}
-
-var displayUrls = function () {
-
-  var coinResourcesContainer = document.getElementById("coin-resources")
-  var repoEl = document.createElement('ul');
-
-  repoEl.classList = 'list-item flex-row justify-space-between align-center';
-
-  var listEl = document.createElement("li")
-
-  
-
 }
