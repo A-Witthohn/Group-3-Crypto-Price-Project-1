@@ -103,7 +103,11 @@ fetch(cryptoSites)
 
   marketCapEl.innerHTML = parseFloat(data.coin.marketCap).toFixed(0);
   websiteEl.innerHTML = data.coin.websiteUrl
+  websiteEl.setAttribute("href", data.coin.websiteUrl)
+  websiteEl.setAttribute("target", "_blank")
   twitterEl.innerHTML = data.coin.twitterUrl
+  twitterEl.setAttribute("href", data.coin.twitterUrl)
+  twitterEl.setAttribute("target", "_blank")
   // console.log("Market cap: "+ parseFloat(data.coin.marketCap).toFixed(0))
   // console.log("Website: "+data.coin.websiteUrl)
   // console.log("Twitter: "+data.coin.twitterUrl)
