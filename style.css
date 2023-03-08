@@ -61,6 +61,7 @@ background:rgba(205, 203, 203, 0.5);
 
 h1{
   font-size: 32px;
+  font-weight: bold;
 }
 
 #box-format{
