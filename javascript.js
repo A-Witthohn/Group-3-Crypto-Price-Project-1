@@ -88,6 +88,8 @@ var coinSearch = function(coin){
           cryptoLookup(data.data[i].id)
           cryptoUrl(data.data[i].id)
           console.log("found " + data.data[i].id)
+          chosenCoin = data.data[i].id
+          localStorage.setItem("chosenCoin", chosenCoin)
         }
       }
   })
