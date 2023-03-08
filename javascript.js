@@ -129,6 +129,13 @@ var cryptoLookup = function (crypto) {
         coinNameEl.innerHTML = data.data.name
         currentPriceEl.innerHTML = " $" + parseFloat(data.data.priceUsd).toLocaleString('en-US', {maximumFractionDigits:2})
         performanceEl.innerHTML = " " + parseFloat(data.data.changePercent24Hr).toFixed(2) + "%"
+        if (data.data.changePercent24Hr > 0) {
+          performanceEl.classList.add('green')
+          performanceEl.classList.remove('red')
+        } else if (data.data.changePercent24Hr < 0){
+          performanceEl.classList.add('red')
+          performanceEl.classList.remove('green')
+        }
         currentVolumeEl.innerHTML = " $" + parseFloat(data.data.volumeUsd24Hr).toLocaleString('en-US', {maximumFractionDigits:2});
         //console.log("price: " +data.data.priceUsd)
         //console.log("%change24hr: " + data.data.changePercent24Hr)
