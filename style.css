@@ -52,6 +52,18 @@ background:rgba(205, 203, 203, 0.5);
   margin-right: 25%;
 }
 
+#box-format{
+  font-size: 20px;
+}
+
+#symbol{
+font-size: 20px;
+}
+
+#ranking{
+  font-size: 20px;
+}
+
 .red {
   font-weight: bolder;
   color: red;
@@ -62,6 +74,12 @@ background:rgba(205, 203, 203, 0.5);
  color: green;
 }
 
+
+#modal-x-btn{
+  position: absolute;
+  top: 5px;
+  right: 3px;
+}
 
 
 @keyframes animate{
