@@ -23,24 +23,31 @@ btcEl.addEventListener("click", function(){
     cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
     dropDown.classList.remove('is-active')
+    localStorage.setItem("chosenCoin", chosenCoin);
 })
 ethEl.addEventListener("click", function (){
     chosenCoin = "ethereum";
     cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
     dropDown.classList.remove('is-active')
+    localStorage.setItem("chosenCoin", chosenCoin);
+
 })
 ltcEl.addEventListener("click", function (){
     chosenCoin = "litecoin";
     cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
     dropDown.classList.remove('is-active')
+    localStorage.setItem("chosenCoin", chosenCoin);
+
 })
 xrpEl.addEventListener("click", function (){
     chosenCoin = "dogecoin";
     cryptoLookup(chosenCoin);
     cryptoUrl(chosenCoin);
     dropDown.classList.remove('is-active')
+    localStorage.setItem("chosenCoin", chosenCoin);
+
 } )
 
 var cryptoLookup = function (crypto) {
@@ -113,3 +120,12 @@ fetch(cryptoSites)
   // console.log("Twitter: "+data.coin.twitterUrl)
   })
 }
+
+
+var loadStorage = function() {
+  var storedCoin = localStorage.getItem("chosenCoin")
+  cryptoLookup(storedCoin)
+  cryptoUrl(storedCoin)
+}
+
+loadStorage();
