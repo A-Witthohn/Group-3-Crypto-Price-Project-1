@@ -123,8 +123,6 @@ font-size: 20px;
 #leo-pic{
   max-height: 400px;
   max-width: 533px;
-  height: 400px;
-  width: 533px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -216,6 +214,10 @@ font-size: 20px;
 
 
 @media only screen and (max-width: 600px){
+  #leo-pic {
+    height: 200px;
+    width: 266px;
+  }
 
 }
 
@@ -224,5 +226,9 @@ font-size: 20px;
 
 
 @media only screen and (max-width: 450px) {
+  #leo-pic {
+    height: 128px;
+    width: 170px;
+  }
 
 }
