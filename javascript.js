@@ -5,6 +5,7 @@ const modal=document.querySelector('.modal');
 // dropDownButton.addEventListener('click', () =>{
 //     dropDown.classList.toggle('is-active');
 // });
+var starterEls = document.querySelectorAll('.startpage')
 var scrollTextEl = document.getElementById('scroll-text')
 
 var modalBtn = document.getElementById('modal-x-btn')
@@ -119,6 +120,9 @@ var cryptoLookup = function (crypto) {
         //console.log("price: " +data.data.priceUsd)
         //console.log("%change24hr: " + data.data.changePercent24Hr)
         //console.log("today's volume: " + data.data.volumeUsd24Hr)
+        for (i=0; i<starterEls.length; i++) {
+          starterEls[i].classList.remove('is-hidden')
+        }
       })
 }
 
@@ -178,6 +182,9 @@ console.log(data)
 
 var loadStorage = function() {
   var storedCoin = localStorage.getItem("chosenCoin")
+  if (storedCoin == null){
+    return;
+  } else
   cryptoLookup(storedCoin)
   cryptoUrl(storedCoin)
 }
