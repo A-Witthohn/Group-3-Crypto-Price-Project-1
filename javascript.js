@@ -156,7 +156,7 @@ var tickerCalls = function(){
       console.log(data)
       for (var i=0; i<20; i++){
         var coinSpan = document.createElement('span')
-        coinSpan.innerHTML = "      " + data.data[i].symbol + ": $" + parseFloat(data.data[i].priceUsd).toFixed(4) + "    "
+        coinSpan.innerHTML = "      " + data.data[i].symbol + ": $" + parseFloat(data.data[i].priceUsd).toFixed(2) + "    "
         scrollTextEl.append(coinSpan)
         if (data.data[i].changePercent24Hr > 0){
           coinSpan.classList.add('green')
