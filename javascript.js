@@ -1,10 +1,10 @@
-const modalBg= document.querySelector('.modal-background');
+// const modalBg= document.querySelector('.modal-background');
 const modal=document.querySelector('.modal');
-const dropDownButton=document.querySelector('.button');
-const dropDown=document.querySelector('.dropdown');
-dropDownButton.addEventListener('click', () =>{
-    dropDown.classList.toggle('is-active');
-});
+// const dropDownButton=document.querySelector('.button');
+// const dropDown=document.querySelector('.dropdown');
+// dropDownButton.addEventListener('click', () =>{
+//     dropDown.classList.toggle('is-active');
+// });
 var scrollTextEl = document.getElementById('scroll-text')
 
 var modalBtn = document.getElementById('modal-x-btn')
@@ -12,51 +12,56 @@ modalBtn.addEventListener('click', function(){
   modal.classList.remove('is-active')
 })
 
+var coinImgEl = document.getElementById("coin-image")
+var coinNameEl = document.getElementById('coin-name')
+
+
 var coinInputEl = document.getElementById('new-coin');
 var searchBtnEl = document.getElementById('search-btn')
+
 
 var currentPriceEl = document.getElementById('price');
 var performanceEl = document.getElementById('performance');
 var currentVolumeEl = document.getElementById('volume');
 var symbolEl = document.getElementById('symbol');
 
-var btcEl = document.getElementById("btc")
-var ethEl = document.getElementById("eth")
-var ltcEl = document.getElementById("ltc")
-var xrpEl = document.getElementById("doge")
+// var btcEl = document.getElementById("btc")
+// var ethEl = document.getElementById("eth")
+// var ltcEl = document.getElementById("ltc")
+// var xrpEl = document.getElementById("doge")
 var chosenCoin;
 
-btcEl.addEventListener("click", function(){
-    chosenCoin = "bitcoin";
-    cryptoLookup(chosenCoin);
-    cryptoUrl(chosenCoin);
-    dropDown.classList.remove('is-active')
-    localStorage.setItem("chosenCoin", chosenCoin);
-})
-ethEl.addEventListener("click", function (){
-    chosenCoin = "ethereum";
-    cryptoLookup(chosenCoin);
-    cryptoUrl(chosenCoin);
-    dropDown.classList.remove('is-active')
-    localStorage.setItem("chosenCoin", chosenCoin);
+// btcEl.addEventListener("click", function(){
+//     chosenCoin = "bitcoin";
+//     cryptoLookup(chosenCoin);
+//     cryptoUrl(chosenCoin);
+//     dropDown.classList.remove('is-active')
+//     localStorage.setItem("chosenCoin", chosenCoin);
+// })
+// ethEl.addEventListener("click", function (){
+//     chosenCoin = "ethereum";
+//     cryptoLookup(chosenCoin);
+//     cryptoUrl(chosenCoin);
+//     dropDown.classList.remove('is-active')
+//     localStorage.setItem("chosenCoin", chosenCoin);
 
-})
-ltcEl.addEventListener("click", function (){
-    chosenCoin = "litecoin";
-    cryptoLookup(chosenCoin);
-    cryptoUrl(chosenCoin);
-    dropDown.classList.remove('is-active')
-    localStorage.setItem("chosenCoin", chosenCoin);
+// })
+// ltcEl.addEventListener("click", function (){
+//     chosenCoin = "litecoin";
+//     cryptoLookup(chosenCoin);
+//     cryptoUrl(chosenCoin);
+//     dropDown.classList.remove('is-active')
+//     localStorage.setItem("chosenCoin", chosenCoin);
 
-})
-xrpEl.addEventListener("click", function (){
-    chosenCoin = "dogecoin";
-    cryptoLookup(chosenCoin);
-    cryptoUrl(chosenCoin);
-    dropDown.classList.remove('is-active')
-    localStorage.setItem("chosenCoin", chosenCoin);
+// })
+// xrpEl.addEventListener("click", function (){
+//     chosenCoin = "dogecoin";
+//     cryptoLookup(chosenCoin);
+//     cryptoUrl(chosenCoin);
+//     dropDown.classList.remove('is-active')
+//     localStorage.setItem("chosenCoin", chosenCoin);
 
-} )
+// } )
 
 //grab input from search bar and run coinSearch on it
 searchBtnEl.addEventListener('click', function(event){
@@ -107,6 +112,7 @@ var cryptoLookup = function (crypto) {
     })
     .then(function (data) {
         symbolEl.innerHTML = "Coin: " + data.data.symbol;
+        coinNameEl.innerHTML = data.data.name
         currentPriceEl.innerHTML = "Current Price: $" + parseFloat(data.data.priceUsd).toLocaleString('en-US', {maximumFractionDigits:2})
         performanceEl.innerHTML = "24-hour Change: " + parseFloat(data.data.changePercent24Hr).toFixed(2) + "%"
         currentVolumeEl.innerHTML = "Today's Volume: $" + parseFloat(data.data.volumeUsd24Hr).toLocaleString('en-US', {maximumFractionDigits:2});
@@ -155,6 +161,7 @@ fetch(cryptoSites)
 .then(function (data) {
 console.log(data)
   rankEl.innerHTML = "Rank: " + data.coin.rank
+  coinImgEl.setAttribute("src", data.coin.icon)
   marketCapEl.innerHTML = "$" + parseFloat(data.coin.marketCap).toLocaleString('en-US', {maximumFractionDigits:0});
   websiteEl.innerHTML = data.coin.websiteUrl
   websiteEl.setAttribute("href", data.coin.websiteUrl)
