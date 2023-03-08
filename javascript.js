@@ -217,8 +217,7 @@ loadStorage();
 $(function () {
   top100Coins
   $('#new-coin').autocomplete({
-    source: top100Coins,
-    minLength: 2
+    source: top100Coins
   });
 });
 
