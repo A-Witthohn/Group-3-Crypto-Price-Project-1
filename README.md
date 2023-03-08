@@ -58,17 +58,24 @@ WireFrame - Modal
 Mockup-Mobile
 </p></strong>
 
-<p align="center">
-    <img src="./assets/mockup-mobile.png" alt="mockup-mobile">
-</p>
+
 
 <strong><p align="center">
 Mockup-Web
 </p></strong>
 
 <p align="center">
-    <img src="./assets/mockup-web.png" alt="mockup-web">
+    <img src="./assets/webpage-deployment.png" alt="mockup-web">
 </p>
+
+<strong><p align="center">
+Mockup-Modal
+</p></strong>
+
+<p align="center">
+    <img src="./assets/modal-deployment.png" alt="mockup-web">
+</p>
+
 
 ---
 
