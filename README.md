@@ -10,17 +10,19 @@ Cyrto Lookup was built as a colaboration project by students in the 24 week UNC 
 
 <br>
 
-As someone interested in Cryto 
+As someone interested in Crypto Currencies
 
-I want to be able to look up specific coins and see how they are performing. 
+I wanted to be able to look up specific coins and see how they are performing. 
 
-I also want to be able to see where I can find more information on these coins, such as Twitter, Reddit, and (...)
+I also want to be able to see where I can find more information on these coins, such as Twitter, the coin website, and (...)
+
+When I search for a coin
+
+Then I am met with infomation that pertains to just that coin
 
 When I leave the page 
 
-Then the page will retain my past searches.
-
-Then field my last search upon reloading the page in the future.
+Then the page will retain my past searches and field my last search upon reloading the page.
 
 ---
 ## Acceptance Criteria
