@@ -168,26 +168,26 @@ font-size: 20px;
 
 /* for Firefox */
 @-moz-keyframes my-animation {
-  from { -moz-transform: translateX(40%); }
-  to { -moz-transform: translateX(-95%); }
+  from { -moz-transform: translateX(45%); }
+  to { -moz-transform: translateX(-100%); }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(40%); }
-  to { -webkit-transform: translateX(-95%); }
+  from { -webkit-transform: translateX(45%); }
+  to { -webkit-transform: translateX(-100%); }
 }
 
 @keyframes my-animation {
   from {
-    -moz-transform: translateX(40%);
-    -webkit-transform: translateX(40%);
-    transform: translateX(40%);
+    -moz-transform: translateX(45%);
+    -webkit-transform: translateX(45%);
+    transform: translateX(45%);
   }
   to {
-    -moz-transform: translateX(-95%);
-    -webkit-transform: translateX(-95%);
-    transform: translateX(-95%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
