@@ -200,6 +200,9 @@ font-size: 20px;
 /* MAX WIDTH 1350 PX */
 
 @media only screen and (max-width: 1350px) {
+  #coin-name{
+    font-size: 50px;
+  }
 
 }
 
@@ -214,6 +217,23 @@ font-size: 20px;
 /* MAX WIDTH 768 PX */
 
 @media only screen and (max-width: 768px){
+  #searched-coin {
+    order: -1;
+    display: block;
+  }
+
+  #columns-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #data-card-column{
+    display: block;
+  }
+
+  #info-card-column{
+    display: block;
+  }
 
 }
 
