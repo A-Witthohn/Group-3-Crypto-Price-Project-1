@@ -48,7 +48,7 @@ WireFrame - Modal
 </p></strong>
 
 <p align="center">
-    <img src="./assets/wireFrame-modal.PNG" width="360" height="360" alt="WireFrame-modal">
+    <img src="./assets/wireFrame-modal.PNG" width="450" height="360" alt="WireFrame-modal">
 </p>
 
 ---
@@ -65,7 +65,7 @@ Mockup-Web
 </p></strong>
 
 <p align="center">
-    <img src="./assets/webpage-deployment.png"width="900" height="500" alt="mockup-web">
+    <img src="./assets/webpage-deployment.png"width="750" height="400" alt="mockup-web">
 </p>
 
 <strong><p align="center">
@@ -114,7 +114,7 @@ The second API is CoinCap API 2.0, this info is displayed in the right box on th
 
     4. Build a function in JS using Jquery to set the title and background of the content boxes to sample the colors of the coin searched for a uniform style that changes with each input. 
 
-    5.
+    5. Find an API that can pull analysis on the coin searched. 
 
 ---
 ## Disclaimer
