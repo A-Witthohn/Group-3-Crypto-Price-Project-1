@@ -157,9 +157,9 @@ font-size: 20px;
   font-size: 24px;
   font-weight: bold;
   /* animation properties */
-  -moz-transform: translateX(100%);
+  /* -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+  transform: translateX(100%); */
   
   -moz-animation: my-animation 25s linear infinite;
   -webkit-animation: my-animation 25s linear infinite;
@@ -168,26 +168,26 @@ font-size: 20px;
 
 /* for Firefox */
 @-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-110%); }
+  from { -moz-transform: translateX(45%); }
+  to { -moz-transform: translateX(-100%); }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-110%); }
+  from { -webkit-transform: translateX(45%); }
+  to { -webkit-transform: translateX(-100%); }
 }
 
 @keyframes my-animation {
   from {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+    -moz-transform: translateX(45%);
+    -webkit-transform: translateX(45%);
+    transform: translateX(45%);
   }
   to {
-    -moz-transform: translateX(-110%);
-    -webkit-transform: translateX(-110%);
-    transform: translateX(-110%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
