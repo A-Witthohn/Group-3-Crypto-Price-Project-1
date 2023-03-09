@@ -1,60 +1,66 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body{
+body {
   min-height: 100vh;
   background-color: rgba(181, 178, 178, 0.438);
 }
 
 .card {
-  background: rgba(102, 245, 238, 0.5)!important;
+  background: rgba(102, 245, 238, 0.5) !important;
   border-radius: 0.70rem;
   box-shadow: 10px 5px 5px rgb(15, 15, 15);
 }
-.hero-body{
-  background: linear-gradient(to left, rgba(91, 180, 231, 0.5),rgb(102, 245, 238, 0.5), rgb(53, 167, 123));
-  
-}
- .button{
 
-    border-radius: 0.7em;
-    cursor: pointer;
-    background: white;
+.hero-body {
+  background: linear-gradient(to left, rgba(91, 180, 231, 0.5), rgb(102, 245, 238, 0.5), rgb(53, 167, 123));
+
 }
- .button:hover{
-background:rgba(205, 203, 203, 0.5);
+
+.button {
+
+  border-radius: 0.7em;
+  cursor: pointer;
+  background: white;
 }
+
+.button:hover {
+  background: rgba(205, 203, 203, 0.5);
+}
+
 .has-image-centered {
   margin-left: auto;
   margin-right: auto;
 }
+
 .titleWrapper {
-  background: linear-gradient(to right, red, orange, yellow, green,blue , indigo, violet);
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animate 100s linear infinite;
 }
 
-@keyframes animate{
-  to{
-      background-position: -2500vh;
+@keyframes animate {
+  to {
+    background-position: -2500vh;
   }
-  
+
 }
 
 
-#pageTitle{
+#pageTitle {
   font-size: 125px;
 
 }
 
 #coin-name {
-  font-size: 72px;;
+  font-size: 72px;
+  ;
 }
 
 .input::-webkit-input-placeholder {
@@ -68,12 +74,13 @@ background:rgba(205, 203, 203, 0.5);
   background-color: rgba(102, 245, 238, 0.5);
   max-height: 120px;
   overflow-y: auto;
-            /* prevent horizontal scrollbar */
+  /* prevent horizontal scrollbar */
   overflow-x: hidden;
-            /* add padding to account for vertical scrollbar */
+  /* add padding to account for vertical scrollbar */
   padding-right: 20px;
 }
-.ui-autocomplete::-webkit-scrollbar{
+
+.ui-autocomplete::-webkit-scrollbar {
   display: none;
 }
 
@@ -83,42 +90,44 @@ background:rgba(205, 203, 203, 0.5);
 
 
 
-#search-form{
+#search-form {
   margin-top: 30px;
   margin-left: 25%;
   margin-right: 25%;
 }
 
-#search-btn{
+
+#search-btn {
   font-weight: bold;
 }
 
-#contact-us{
+#contact-us {
   font-size: 20px;
   font-weight: bold;
 }
 
-h1{
+h1 {
   font-size: 32px;
   font-weight: bold;
 }
 
-#right-box-title{
-margin-top: 35px;
-}
-
-#left-box-title{
+#right-box-title {
   margin-top: 35px;
 }
-#box-format{
+
+#left-box-title {
+  margin-top: 35px;
+}
+
+#box-format {
   font-size: 20px;
 }
 
-#symbol{
-font-size: 20px;
+#symbol {
+  font-size: 20px;
 }
 
-#ranking{
+#ranking {
   font-size: 20px;
 }
 
@@ -128,21 +137,21 @@ font-size: 20px;
 }
 
 .green {
- font-weight: bolder;
- color: green;
+  font-weight: bolder;
+  color: green;
 }
- 
-#disclaimer{
+
+#disclaimer {
   font-size: 20px;
 }
 
-#modal-x-btn{
+#modal-x-btn {
   position: absolute;
   top: 15px;
   right: 12px;
 }
 
-#leo-pic{
+#leo-pic {
   max-height: 400px;
   max-width: 533px;
   margin-left: auto;
@@ -154,18 +163,18 @@ font-size: 20px;
   padding: auto;
 }
 
-.modal-content{
- background-color:  rgb(102, 245, 238)!important;
+.modal-content {
+  background-color: rgb(102, 245, 238) !important;
 }
 
 
 
-  .footer{
-    padding: 0px;
-    margin-top: auto;
-    position: fixed;
-    bottom: 0;
-  }
+.footer {
+  padding: 0px;
+  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+}
 
 
 #scroll-container {
@@ -183,7 +192,7 @@ font-size: 20px;
   /* -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%); */
-  
+
   -moz-animation: my-animation 25s linear infinite;
   -webkit-animation: my-animation 25s linear infinite;
   animation: my-animation 25s linear infinite;
@@ -191,14 +200,24 @@ font-size: 20px;
 
 /* for Firefox */
 @-moz-keyframes my-animation {
-  from { -moz-transform: translateX(45%); }
-  to { -moz-transform: translateX(-100%); }
+  from {
+    -moz-transform: translateX(45%);
+  }
+
+  to {
+    -moz-transform: translateX(-100%);
+  }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(45%); }
-  to { -webkit-transform: translateX(-100%); }
+  from {
+    -webkit-transform: translateX(45%);
+  }
+
+  to {
+    -webkit-transform: translateX(-100%);
+  }
 }
 
 @keyframes my-animation {
@@ -207,6 +226,7 @@ font-size: 20px;
     -webkit-transform: translateX(45%);
     transform: translateX(45%);
   }
+
   to {
     -moz-transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
@@ -215,33 +235,33 @@ font-size: 20px;
 }
 
 @media only screen and (max-width: 2100px) {
-.ui-autocomplete {
+  .ui-autocomplete {
     max-width: 46.5%;
-}
+  }
 }
 
 @media only screen and (max-width: 1775px) {
   .ui-autocomplete {
-      max-width: 46%;
+    max-width: 46%;
   }
-  }
-  
-  @media only screen and (max-width: 1550px) {
-    .ui-autocomplete {
-        max-width: 45.5%;
-    }
-    }
+}
 
-    @media only screen and (max-width: 1420px) {
-      .ui-autocomplete {
-          max-width: 45%;
-      }
-      }
+@media only screen and (max-width: 1550px) {
+  .ui-autocomplete {
+    max-width: 45.5%;
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  .ui-autocomplete {
+    max-width: 45%;
+  }
+}
 
 /* MAX WIDTH 1350 PX */
 
 @media only screen and (max-width: 1350px) {
-  #coin-name{
+  #coin-name {
     font-size: 50px;
   }
 
@@ -249,62 +269,62 @@ font-size: 20px;
 
 @media only screen and (max-width: 1250px) {
   .ui-autocomplete {
-      max-width: 44.5%;
+    max-width: 44.5%;
   }
-  }
+}
 
-  @media only screen and (max-width: 1100px) {
-    .ui-autocomplete {
-        max-width: 43.5%;
-    }
-    }
+@media only screen and (max-width: 1100px) {
+  .ui-autocomplete {
+    max-width: 43.5%;
+  }
+}
 
 /* MAX WIDTH 950 PX */
 
-@media only screen and (max-width: 975px){
+@media only screen and (max-width: 975px) {
   .ui-autocomplete {
     max-width: 42.5%;
-}
+  }
 }
 
-@media only screen and (max-width: 825px){
+@media only screen and (max-width: 825px) {
   .ui-autocomplete {
     max-width: 42%;
-}
+  }
 }
 
 
 /* MAX WIDTH 768 PX */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   #searched-coin {
     order: -1;
     display: block;
   }
 
-  #columns-container{
+  #columns-container {
     display: flex;
     flex-direction: column;
   }
 
-  #data-card-column{
+  #data-card-column {
     display: block;
   }
 
-  #info-card-column{
+  #info-card-column {
     display: block;
   }
 
   .ui-autocomplete {
     max-width: 41%;
-}
+  }
 
 }
 
-@media only screen and (max-width: 675px){
+@media only screen and (max-width: 675px) {
   .ui-autocomplete {
     max-width: 40%;
-}
+  }
 
 }
 
@@ -312,7 +332,7 @@ font-size: 20px;
 /* MAX WIDTH 600 PX */
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   #leo-pic {
     height: 200px;
     width: 266px;
@@ -325,14 +345,14 @@ font-size: 20px;
 
   .ui-autocomplete {
     max-width: 39%;
-}
+  }
 
 }
 
 @media only screen and (max-width: 550px) {
   .ui-autocomplete {
     max-width: 37%;
-}
+  }
 }
 
 
@@ -345,11 +365,15 @@ font-size: 20px;
     width: 170px;
   }
 
-  #pageTitle{
+  #pageTitle {
     font-size: 75px;
   }
 
   .ui-autocomplete {
     max-width: 35%;
-}
+  }
+
+  #new-coin {
+    font-size: 12px;
+  }
 }
