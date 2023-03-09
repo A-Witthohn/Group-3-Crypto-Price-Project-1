@@ -40,7 +40,7 @@ WireFrame - Page 1
 </p></strong>
 
 <p align="center">
-    <img src="./assets/wireframe-p1.PNG" alt="WireFrame-page1">
+    <img src="./assets/wireframe-p1.PNG" width="750" height="400" alt="WireFrame-page1">
 </p>
 
 <strong><p align="center">
@@ -48,7 +48,7 @@ WireFrame - Modal
 </p></strong>
 
 <p align="center">
-    <img src="./assets/wireFrame-modal.PNG" alt="WireFrame-modal">
+    <img src="./assets/wireFrame-modal.PNG" width="360" height="360" alt="WireFrame-modal">
 </p>
 
 ---
@@ -65,7 +65,7 @@ Mockup-Web
 </p></strong>
 
 <p align="center">
-    <img src="./assets/webpage-deployment.png" alt="mockup-web">
+    <img src="./assets/webpage-deployment.png"width="900" height="500" alt="mockup-web">
 </p>
 
 <strong><p align="center">
@@ -73,13 +73,17 @@ Mockup-Modal
 </p></strong>
 
 <p align="center">
-    <img src="./assets/modal-deployment.png" alt="mockup-web">
+    <img src="./assets/modal-deployment.PNG" width="360" height="360" alt="mockup-web">
 </p>
 
 
 ---
 
 ## Deployment 
+
+[Crypto Lookup](https://a-witthohn.github.io/Group-3-Crypto-Price-Project-1)
+
+[Git Hub Repository](https://github.com/A-Witthohn/Group-3-Crypto-Price-Project-1)
 
 
 ---
@@ -95,16 +99,23 @@ The first API is Public API, This API info is displayed in the left box on the w
 The second API is CoinCap API 2.0, this info is displayed in the right box on the webpage or the bottom box seen when scrolling on the mobile.
 
 [CoinCap API 2.0](https://docs.coincap.io/#ee0c0be6-513f-4466-bbb0-2016add462e9)
+
 ---
 ## Future Development Ideas 💡
 
-    1. Seach bar functionality
+
+    1. Search Bar Functionality ✅
 
     2. Create a save info button which then logs information on a seperate html page. This page can be curated by the user to build a collection of only coins that are of interest to them. 
 
-    3. Include a link where users can reach out to the Devs. to suggest how to further improve the site. 
+    3. Include a link where users can reach out to the Devs. to suggest how to further improve the site. ✅
 
-    3b. This could be displayed in one of two ways a link that directs the user straight to an email or by a form that the user can also preselect a subject for that email (ex - Subject - New Coin Added , Subject - New Feature Idea)
+    3b. This could be displayed in one of two ways a link that directs the user straight to an email or by a form that the user can also preselect a subject for that email (ex - Subject - New Coin Added , Subject - New Feature Idea) ✅
+
+    4. Build a function in JS using Jquery to set the title and background of the content boxes to sample the colors of the coin searched for a uniform style that changes with each input. 
+
+    5.
+
 ---
 ## Disclaimer
 
