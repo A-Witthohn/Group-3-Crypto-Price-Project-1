@@ -64,9 +64,9 @@ background:rgba(205, 203, 203, 0.5);
 
 .ui-autocomplete {
   border: 1px solid slategray;
-  max-width: 25%;
+  max-width: 47%;
   background-color: rgba(102, 245, 238, 0.5);
-  max-height: 150px;
+  max-height: 120px;
   overflow-y: auto;
             /* prevent horizontal scrollbar */
   overflow-x: hidden;
@@ -214,6 +214,29 @@ font-size: 20px;
   }
 }
 
+@media only screen and (max-width: 2100px) {
+.ui-autocomplete {
+    max-width: 46.5%;
+}
+}
+
+@media only screen and (max-width: 1775px) {
+  .ui-autocomplete {
+      max-width: 46%;
+  }
+  }
+  
+  @media only screen and (max-width: 1550px) {
+    .ui-autocomplete {
+        max-width: 45.5%;
+    }
+    }
+
+    @media only screen and (max-width: 1420px) {
+      .ui-autocomplete {
+          max-width: 45%;
+      }
+      }
 
 /* MAX WIDTH 1350 PX */
 
@@ -224,11 +247,30 @@ font-size: 20px;
 
 }
 
+@media only screen and (max-width: 1250px) {
+  .ui-autocomplete {
+      max-width: 44.5%;
+  }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .ui-autocomplete {
+        max-width: 43.5%;
+    }
+    }
 
 /* MAX WIDTH 950 PX */
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 975px){
+  .ui-autocomplete {
+    max-width: 42.5%;
+}
+}
 
+@media only screen and (max-width: 825px){
+  .ui-autocomplete {
+    max-width: 42%;
+}
 }
 
 
@@ -253,6 +295,17 @@ font-size: 20px;
     display: block;
   }
 
+  .ui-autocomplete {
+    max-width: 41%;
+}
+
+}
+
+@media only screen and (max-width: 675px){
+  .ui-autocomplete {
+    max-width: 40%;
+}
+
 }
 
 
@@ -270,6 +323,16 @@ font-size: 20px;
     right: 30px;
   }
 
+  .ui-autocomplete {
+    max-width: 39%;
+}
+
+}
+
+@media only screen and (max-width: 550px) {
+  .ui-autocomplete {
+    max-width: 37%;
+}
 }
 
 
@@ -284,6 +347,9 @@ font-size: 20px;
 
   #pageTitle{
     font-size: 75px;
-  
   }
+
+  .ui-autocomplete {
+    max-width: 35%;
+}
 }
