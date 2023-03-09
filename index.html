@@ -78,8 +78,8 @@
     <!--Two cards created to call the 2 APIs with the coin search and retrieve data to display here-->
     <section class="section mb-5 mt-0 pt-0 startpage is-hidden">
       <div class="container has-text-centered">
-        <div class="columns">
-          <div class="column is-one-third">
+        <div class="columns" id="columns-container">
+          <div class="column is-one-third" id="data-card-column">
             <h1 class="is-size-1 title" id="left-box-title">Crypto Data</h1>
             <div class="card">
               <h2><strong><span id="symbol"></span></strong></h2>
@@ -98,7 +98,7 @@
               <img class="mt-1" id="coin-image" src="">
             </figure>
           </div>
-          <div class="column is-one-third">
+          <div class="column is-one-third" id="info-card-column">
             <h1 class="is-size-1 title" id="right-box-title">Coin Info</h1>
             <div class="card">
               <h2><strong><span id="ranking"></span></strong></h2>
