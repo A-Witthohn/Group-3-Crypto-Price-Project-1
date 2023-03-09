@@ -99,6 +99,17 @@ body {
 
 #search-btn {
   font-weight: bold;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+#new-coin{
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+#contact-us-container{
+  padding-bottom: 50px;
 }
 
 #contact-us {
@@ -130,6 +141,10 @@ h1 {
 #ranking {
   font-size: 20px;
 }
+
+/* #coin-resources{
+white-space: pre-wrap;
+} */
 
 .red {
   font-weight: bolder;
