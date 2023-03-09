@@ -334,6 +334,12 @@ white-space: pre-wrap;
     max-width: 41%;
   }
 
+  #search-form{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+  }
+
 }
 
 @media only screen and (max-width: 675px) {
@@ -388,7 +394,9 @@ white-space: pre-wrap;
     max-width: 35%;
   }
 
-  #new-coin {
-    font-size: 12px;
+  
+  #new-coin::placeholder {
+    font-size: 16px;
   }
+
 }
