@@ -7,6 +7,7 @@
 
 body{
   min-height: 100vh;
+  background-color: rgb(181, 178, 178);
 }
 
 .card {
@@ -50,6 +51,10 @@ background:rgba(205, 203, 203, 0.5);
 #pageTitle{
   font-size: 125px;
 
+}
+
+#coin-name {
+  font-size: 72px;;
 }
 
 .input::-webkit-input-placeholder {
