@@ -32,17 +32,20 @@ background:rgba(205, 203, 203, 0.5);
   margin-right: auto;
 }
 .titleWrapper {
-  background: linear-gradient(to right, red, orange, yellow, green,blue , indigo, violet);
+  /*background: linear-gradient(to right, red, orange, yellow, green,blue , indigo, violet);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animate 100s linear infinite;
 }
+
 @keyframes animate{
   to{
       background-position: -2500vh;
   }
+  */
 }
+
 
 #pageTitle{
   font-size: 125px;
