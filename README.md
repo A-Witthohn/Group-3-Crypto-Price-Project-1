@@ -38,7 +38,7 @@ Project Requirements
 ## Wire-Frame
 
 <strong><p align="center">
-WireFrame - Page 1
+WireFrame - Main Page
 </p></strong>
 
 <p align="center">
@@ -50,24 +50,26 @@ WireFrame - Modal
 </p></strong>
 
 <p align="center">
-    <img src="./assets/wireFrame-modal.PNG" width="450" height="360" alt="WireFrame-modal">
+    <img src="./assets/wireFrame-modal.PNG" width="500" height="360" alt="WireFrame-modal">
 </p>
 
 ---
 ## Mock-Up
-
 <strong><p align="center">
 Mockup-Mobile
 </p></strong>
 
 
+<p align="center">
+<img src="./assets/Final-Mobile-Layout.png"width="350" height="1300" alt="mockup-web">
+</p>
 
 <strong><p align="center">
 Mockup-Web
 </p></strong>
 
 <p align="center">
-    <img src="./assets/webpage-deployment.png"width="750" height="400" alt="mockup-web">
+    <img src="./assets/Final-Site-Layout.png"width="1500" height="1200" alt="mockup-web">
 </p>
 
 <strong><p align="center">
@@ -83,13 +85,13 @@ Mockup-Modal
 
 ## Deployment 
 
-[Crypto Lookup](https://a-witthohn.github.io/Group-3-Cryto-Price-Project-1)
+[Crypto Lookup](https://a-witthohn.github.io/Group-3-Crypto-Price-Project-1)
 
 [Git Hub Repository](https://github.com/A-Witthohn/Group-3-Crypto-Price-Project-1)
 
 
 ---
-## APIs Used
+## APIs 
 
 Cyrto Lookup utilizes two APIs specifically and those APIs are linked below.
 
