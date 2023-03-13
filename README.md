@@ -69,7 +69,7 @@ Mockup-Web
 </p></strong>
 
 <p align="center">
-    <img src="./assets/Final-Site-Layout.png"width="2700" height="1700" alt="mockup-web">
+    <img src="./assets/Final-Site-Layout.png"width="" height="" alt="mockup-web">
 </p>
 
 <strong><p align="center">
