@@ -1,4 +1,4 @@
-# Group-3-Cryto-Price-Project-1
+# Group-3-Crypto-Price-Project-1
 
 ## User Story
 
@@ -69,7 +69,7 @@ Mockup-Web
 </p></strong>
 
 <p align="center">
-    <img src="./assets/Final-Site-Layout.png"width="1500" height="1200" alt="mockup-web">
+    <img src="./assets/Final-Site-Layout.png"width="2700" height="1700" alt="mockup-web">
 </p>
 
 <strong><p align="center">
