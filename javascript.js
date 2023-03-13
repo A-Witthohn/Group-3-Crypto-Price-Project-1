@@ -174,7 +174,7 @@ $(function () {
   });
 });
 
-var exclusionList = ["xrp", "avalanche", "polygon", "multi-collateral-dai", "crypto-com-coin", "near-protocol", "stacks", "elrond-egld", "theta", "kucoin-token", "klaytn", "synthetix-network-token", "conflux-network", "pancakeswap", "mina", "gatetoken", "casper", "unus-sed-leo", "wootrade"]
+var exclusionList = ["xrp", "avalanche", "polygon", "multi-collateral-dai", "crypto-com-coin", "near-protocol", "stacks", "elrond-egld", "theta", "kucoin-token", "klaytn", "synthetix-network-token", "conflux-network", "pancakeswap", "mina", "gatetoken", "casper", "unus-sed-leo", "wootrade", "compound"]
 var top100Coins = []
 var requestUrl = "https://api.coincap.io/v2/assets?limit=100"
 fetch(requestUrl)
@@ -185,7 +185,7 @@ fetch(requestUrl)
     console.log(data)
     for (var i = 0; i < 100; i++) {
       if (exclusionList.includes(data.data[i].id)){
-        console.log("excluding " +data.data[i].id)
+        //console.log("excluding " +data.data[i].id)
       } else {
       top100Coins.push(data.data[i].symbol)
       if (data.data[i].symbol !== data.data[i].name) {
