@@ -83,7 +83,7 @@ Mockup-Modal
 
 ## Deployment 
 
-[Crypto Lookup](https://a-witthohn.github.io/Group-3-Crypto-Price-Project-1)
+[Crypto Lookup](https://a-witthohn.github.io/Group-3-Cryto-Price-Project-1)
 
 [Git Hub Repository](https://github.com/A-Witthohn/Group-3-Crypto-Price-Project-1)
 
