@@ -232,7 +232,7 @@ fetch(requestUrl)
     console.log(data)
     for (var i = 0; i < 100; i++) {
       if (exclusionList.includes(data.data[i].id)){
-        console.log("excluding " +data.data[i].id)
+        //console.log("excluding " +data.data[i].id)
       } else {
       top100Coins.push(data.data[i].symbol)
       if (data.data[i].symbol !== data.data[i].name) {
