@@ -174,7 +174,7 @@ $(function () {
   });
 });
 
-var exclusionList = ["xrp", "avalanche", "polygon", "multi-collateral-dai", "crypto-com-coin", "near-protocol", "stacks", "elrond-egld", "theta", "kucoin-token", "klaytn", "synthetix-network-token", "conflux-network", "pancakeswap", "mina", "gatetoken"]
+var exclusionList = ["xrp", "avalanche", "polygon", "multi-collateral-dai", "crypto-com-coin", "near-protocol", "stacks", "elrond-egld", "theta", "kucoin-token", "klaytn", "synthetix-network-token", "conflux-network", "pancakeswap", "mina", "gatetoken", "casper", "unus-sed-leo", "wootrade"]
 var top100Coins = []
 var requestUrl = "https://api.coincap.io/v2/assets?limit=100"
 fetch(requestUrl)
