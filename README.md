@@ -1,4 +1,4 @@
-# Group-3-Crypto-Price-Project-1
+# Group-3 Crypto Lookup
 
 ## User Story
 
