@@ -18,7 +18,7 @@ var coinNameEl = document.getElementById('coin-name')
 
 
 var coinInputEl = document.getElementById('new-coin');
-var searchBtnEl = document.getElementById('search-btn')
+var searchBtnEl = document.getElementById('search-btn');
 
 
 var currentPriceEl = document.getElementById('price');
@@ -78,8 +78,8 @@ document.querySelector('#new-coin').addEventListener('keypress', function (e) {
     if (coinInputEl.value == null) {
       return;
     } else
-      coinSearch(coinInputEl.value);
-  }
+      coinSearch(coinInputEl.value);  
+    }
 });
 
 
@@ -208,7 +208,7 @@ var loadStorage = function () {
     return;
   } else
     cryptoLookup(storedCoin)
-  cryptoUrl(storedCoin)
+    cryptoUrl(storedCoin)
 }
 
 loadStorage();
@@ -221,6 +221,7 @@ $(function () {
   });
 });
 
+var exclusionList = ["xrp", "avalanche", "polygon", "multi-collateral-dai", "crypto-com-coin", "near-protocol", "stacks", "elrond-egld", "theta", "kucoin-token", "klaytn", "synthetix-network-token", "conflux-network", "pancakeswap", "mina", "gatetoken"]
 var top100Coins = []
 var requestUrl = "https://api.coincap.io/v2/assets?limit=100"
 fetch(requestUrl)
@@ -230,9 +231,14 @@ fetch(requestUrl)
   .then(function (data) {
     console.log(data)
     for (var i = 0; i < 100; i++) {
+      if (exclusionList.includes(data.data[i].id)){
+        console.log("excluding " +data.data[i].id)
+      } else {
       top100Coins.push(data.data[i].symbol)
       if (data.data[i].symbol !== data.data[i].name) {
         top100Coins.push(data.data[i].name)
-      }
+      }}
     }
   })
+
+  
