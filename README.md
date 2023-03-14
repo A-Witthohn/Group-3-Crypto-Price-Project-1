@@ -1,9 +1,9 @@
-# Group-3-Crypto-Price-Project-1
+# Group-3 Crypto Lookup
 
 ## User Story
 
 
-Cyrto Lookup was built as a colaboration project by students in the 24 week UNC Software Engineering Bootcamp. As students we were given specific project requirements listed below in the Acceptance Criteria. With those requirments in mind, we began brain storming ideas, specifically ones where we could find public APIs to get access to the information we might need. One idea suggested was of a page that would return stock info after the user input a specific stock ticker. From this we encountered some difficulties in locating APIs that did not require keys, while this was not a complete roadblock, we felt it best to pivot to try to simplify the task at hand. From this, emerged the idea of trying Cyrto Currencies instead. While building our wire frame (images included below) we discussed with our TAs the plan for the layout. After discussing the possible roadblocks in building a search bar that could allow potentially infinite user inputs and how we would try to scope parameters around those searches we again pivoted. This time we decided a drop down menu where the user  selects from five pre-selected cryto coins would again make design easier. Once we had what we felt was a solid wire frame and concept we began to break the project down in Github Projects. We tried to identify all tasks in their smallest forms and created issues for it. Once completed We discussed and assigned people to each task. Finally we built a skeleton template for everyone to work off. The Site presented below in the images and deployment section is our Version 1.0. 
+Crypto Lookup was built as a colaboration project by students in the 24 week UNC Software Engineering Bootcamp. As students we were given specific project requirements listed below in the Acceptance Criteria. With those requirments in mind, we began brain storming ideas, specifically ones where we could find public APIs to get access to the information we might need. One idea suggested was of a page that would return stock info after the user input a specific stock ticker. From this we encountered some difficulties in locating APIs that did not require keys, while this was not a complete roadblock, we felt it best to pivot to try to simplify the task at hand. From this, emerged the idea of trying Crypto Currencies instead. While building our wire frame (images included below) we discussed with our TAs the plan for the layout. After discussing the possible roadblocks in building a search bar that could allow potentially infinite user inputs and how we would try to scope parameters around those searches we again pivoted. This time we decided a drop down menu where the user  selects from five pre-selected crypto coins would again make design easier. Once we had what we felt was a solid wire frame and concept we began to break the project down in Github Projects. We tried to identify all tasks in their smallest forms and created issues for it. Once completed We discussed and assigned people to each task. Finally we built a skeleton template for everyone to work off. The Site presented below in the images and deployment section is our Version 1.0. 
 
 
 
@@ -93,7 +93,7 @@ Mockup-Modal
 ---
 ## APIs 
 
-Cyrto Lookup utilizes two APIs specifically and those APIs are linked below.
+Crypto Lookup utilizes two APIs specifically and those APIs are linked below.
 
 
 The first API is Public API, This API info is displayed in the left box on the webpage and is the top box seen when scrolling on mobile.
@@ -124,7 +124,7 @@ The second API is CoinCap API 2.0, this info is displayed in the right box on th
 ## Disclaimer
 
 
-Cryto Lookup was created strictly as an educational tool. It is not an endorsement of any specific Cryto currencies. The infomation provided is to demostrate the understanding and potential implementations of concepts in software engineering. Trade at your own risk!
+Cryto Lookup was created strictly as an educational tool. It is not an endorsement of any specific Crypto currencies. The infomation provided is to demostrate the understanding and potential implementations of concepts in software engineering. Trade at your own risk!
 
 ## License
 
