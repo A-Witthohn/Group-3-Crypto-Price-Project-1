@@ -45,7 +45,7 @@ document.querySelector('#new-coin').addEventListener('keypress', function (e) {
 
 //function to search for coin symbols to return data if they are in the top100
 var coinSearch = function (coin) {
-  console.log("coin input: " + coin)
+  //console.log("coin input: " + coin)
   var toUpperCoin = coin.toUpperCase();
   var requestUrl = "https://api.coincap.io/v2/assets?limit=100"
   fetch(requestUrl)
@@ -57,7 +57,7 @@ var coinSearch = function (coin) {
         if (data.data[i].symbol == toUpperCoin || data.data[i].name.toUpperCase() == toUpperCoin || data.data[i].id.toUpperCase() == toUpperCoin) {
           cryptoLookup(data.data[i].id)
           cryptoUrl(data.data[i].id)
-          console.log("found " + data.data[i].id)
+          //console.log("found " + data.data[i].id)
           chosenCoin = data.data[i].id
           localStorage.setItem("chosenCoin", chosenCoin)
         }
@@ -65,12 +65,13 @@ var coinSearch = function (coin) {
     })
 }
 
+//populates the data in the first data box from coincap api
 var cryptoLookup = function (crypto) {
   coinInputEl.classList.add('is-small')
   coinInputEl.classList.remove('is-large')
   searchBtnEl.classList.add('is-small')
   searchBtnEl.classList.remove('is-large')
-  console.log("chosen coin is " + crypto)
+  //console.log("chosen coin is " + crypto)
 
   var requestUrl = "https://api.coincap.io/v2/assets/" + crypto
 
@@ -97,6 +98,7 @@ var cryptoLookup = function (crypto) {
     })
 }
 
+//populates the bottom ticker with top 20 cryptos from coincap api
 var tickerCalls = function () {
   var requestUrl = "https://api.coincap.io/v2/assets/?limit=20"
   fetch(requestUrl)
@@ -104,7 +106,7 @@ var tickerCalls = function () {
       return response.json();
     })
     .then(function (data) {
-      console.log(data)
+      //console.log(data)
       for (var i = 0; i < 20; i++) {
         var coinSpan = document.createElement('span')
         coinSpan.innerHTML = " &emsp; " + data.data[i].symbol + ": $" + parseFloat(data.data[i].priceUsd).toFixed(2) + "  &emsp;"
@@ -131,7 +133,7 @@ var websiteEl = document.getElementById("website")
 var twitterEl = document.getElementById("twitter")
 
 
-
+//populates the second data box with info from coinstats api
 var cryptoUrl = function (crypto) {
 
   var cryptoSites = "https://api.coinstats.app/public/v1/coins/" + crypto + "?skip=0&limit=10&currency=USD"
@@ -141,7 +143,7 @@ var cryptoUrl = function (crypto) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data)
+      //console.log(data)
       rankEl.innerHTML = "Rank: " + data.coin.rank
       coinImgEl.setAttribute("src", data.coin.icon)
       marketCapEl.innerHTML = "$" + parseFloat(data.coin.marketCap).toLocaleString('en-US', { maximumFractionDigits: 0 });
@@ -174,6 +176,7 @@ $(function () {
   });
 });
 
+//adds top 100 ticker symbols and coin names from coincap api for the autocomplete dropdown
 var exclusionList = ["xrp", "avalanche", "polygon", "multi-collateral-dai", "crypto-com-coin", "near-protocol", "stacks", "elrond-egld", "theta", "kucoin-token", "klaytn", "synthetix-network-token", "conflux-network", "pancakeswap", "mina", "gatetoken", "casper", "unus-sed-leo", "wootrade", "compound"]
 var top100Coins = []
 var requestUrl = "https://api.coincap.io/v2/assets?limit=100"
@@ -182,10 +185,9 @@ fetch(requestUrl)
     return response.json();
   })
   .then(function (data) {
-    console.log(data)
+    //console.log(data)
     for (var i = 0; i < 100; i++) {
       if (exclusionList.includes(data.data[i].id)){
-        //console.log("excluding " +data.data[i].id)
       } else {
       top100Coins.push(data.data[i].symbol)
       if (data.data[i].symbol !== data.data[i].name) {
