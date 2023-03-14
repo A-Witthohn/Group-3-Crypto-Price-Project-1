@@ -124,7 +124,9 @@ The second API is CoinCap API 2.0, this info is displayed in the right box on th
 ## Disclaimer
 
 
+
 Crypto Lookup was created strictly as an educational tool. It is not an endorsement of any specific Crypto currencies. The infomation provided is to demonstrate the understanding and potential implementations of concepts in software engineering. Trade at your own risk!
+
 
 ## License
 

@@ -177,6 +177,7 @@ $(function () {
 });
 
 //adds top 100 ticker symbols and coin names from coincap api for the autocomplete dropdown
+//exclusion list includes the coin id's that return results from coincap api but not coinstats due to seprate id's
 var exclusionList = ["xrp", "avalanche", "polygon", "multi-collateral-dai", "crypto-com-coin", "near-protocol", "stacks", "elrond-egld", "theta", "kucoin-token", "klaytn", "synthetix-network-token", "conflux-network", "pancakeswap", "mina", "gatetoken", "casper", "unus-sed-leo", "wootrade", "compound"]
 var top100Coins = []
 var requestUrl = "https://api.coincap.io/v2/assets?limit=100"
